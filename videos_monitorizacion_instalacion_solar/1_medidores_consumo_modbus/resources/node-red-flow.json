@@ -1,0 +1,185 @@
+[
+    {
+        "id": "567ccd8c.354c84",
+        "type": "tab",
+        "label": "Flow",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "230b3b3d.269dfc",
+        "type": "modbus-client",
+        "name": "adapador usb",
+        "clienttype": "simpleser",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "tcpHost": "127.0.0.1",
+        "tcpPort": "502",
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttyUSB0",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": "9600",
+        "serialDatabits": "8",
+        "serialStopbits": "1",
+        "serialParity": "none",
+        "serialConnectionDelay": "100",
+        "unit_id": "1",
+        "commandDelay": "1",
+        "clientTimeout": "1000",
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": "2000",
+        "parallelUnitIdsAllowed": true
+    },
+    {
+        "id": "6b5ef320.6f5de4",
+        "type": "emoncms-server",
+        "server": "http://192.168.1.49",
+        "name": ""
+    },
+    {
+        "id": "355f449.f66cfbc",
+        "type": "modbus-read",
+        "z": "567ccd8c.354c84",
+        "name": "modbus",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "unitid": "1",
+        "dataType": "InputRegister",
+        "adr": "0",
+        "quantity": "10",
+        "rate": "10",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "230b3b3d.269dfc",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": true,
+        "x": 170,
+        "y": 140,
+        "wires": [
+            [
+                "e5caaa0c.b5554"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "e5caaa0c.b5554",
+        "type": "function",
+        "z": "567ccd8c.354c84",
+        "name": "",
+        "func": "\nobj = {}\nobj.payload = {};\nobj.payload.V=msg.payload[0]/10;\nobj.payload.A=msg.payload[1]/1000;\nobj.payload.W=msg.payload[3]/10;\nobj.payload.Hz=msg.payload[7]/10;\nobj.payload.pf=msg.payload[8]/100;\n\nreturn obj;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 370,
+        "y": 140,
+        "wires": [
+            [
+                "6f2c43f5.f35d3c",
+                "c28281f6.cfd838"
+            ]
+        ]
+    },
+    {
+        "id": "6f2c43f5.f35d3c",
+        "type": "debug",
+        "z": "567ccd8c.354c84",
+        "name": "Uno",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "dbc66846.bacd4",
+        "type": "modbus-read",
+        "z": "567ccd8c.354c84",
+        "name": "modbus",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "unitid": "2",
+        "dataType": "InputRegister",
+        "adr": "0",
+        "quantity": "10",
+        "rate": "10",
+        "rateUnit": "s",
+        "delayOnStart": true,
+        "startDelayTime": "5",
+        "server": "230b3b3d.269dfc",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": true,
+        "x": 170,
+        "y": 220,
+        "wires": [
+            [
+                "5e8c7b84.538d04"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "5e8c7b84.538d04",
+        "type": "function",
+        "z": "567ccd8c.354c84",
+        "name": "",
+        "func": "\nobj = {}\nobj.payload = {};\nobj.payload.V=msg.payload[0]/10;\nobj.payload.A=msg.payload[1]/1000;\nobj.payload.W=msg.payload[3]/10;\nobj.payload.Hz=msg.payload[7]/10;\nobj.payload.pf=msg.payload[8]/100;\n\nreturn obj;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 370,
+        "y": 220,
+        "wires": [
+            [
+                "669c4383.289a14"
+            ]
+        ]
+    },
+    {
+        "id": "669c4383.289a14",
+        "type": "debug",
+        "z": "567ccd8c.354c84",
+        "name": "Dos",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "c28281f6.cfd838",
+        "type": "emoncms",
+        "z": "567ccd8c.354c84",
+        "name": "Emoncms Push",
+        "emonServer": "6b5ef320.6f5de4",
+        "nodegroup": "medidor1",
+        "datatype": "legacy",
+        "x": 600,
+        "y": 80,
+        "wires": []
+    }
+]

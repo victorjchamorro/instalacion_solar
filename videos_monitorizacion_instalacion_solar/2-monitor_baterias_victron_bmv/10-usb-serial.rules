@@ -1,0 +1,10 @@
+SUBSYSTEM=="tty", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", ATTRS{bcdDevice}=="0263", SYMLINK+="ttyUSB_meter"
+SUBSYSTEM=="tty", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", ATTRS{bcdDevice}=="0254", KERNELS=="1-1.1.2.3", SYMLINK+="ttyUSB_king"
+SUBSYSTEM=="tty", ATTRS{idVendor}=="067b", ATTRS{idProduct}=="2303", KERNELS=="1-1.1.2.1" SYMLINK+="ttyUSB_bms"
+SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", KERNELS=="1-1.1.2.2", SYMLINK+="ttyUSB_bmv2"
+SUBSYSTEM=="tty", ATTRS{idVendor}=="10c4", ATTRS{idProduct}=="ea60", SYMLINK+="ttyUSB_bmv"
+
+#SUBSYSTEM=="hidraw", ATTRS{idVendor}=="0665", ATTRS{idProduct}=="5161", ATTRS{bcdDevice}==" 0.02", SYMLINK+="hidraw_king", MODE="0777", GROUP="plugdev"
+#SUBSYSTEM=="tty", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", ATTRS{bcdDevice}=="0254", KERNELS=="1-1.3", SYMLINK+="ttyUSB_hibrido"
+#SUBSYSTEM=="tty", ATTRS{idVendor}=="067b", ATTRS{idProduct}=="2303", KERNELS=="1-1.2" SYMLINK+="ttyUSB_bmv"
+

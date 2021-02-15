@@ -1,0 +1,4603 @@
+[
+    {
+        "id": "3f2aa594.49e742",
+        "type": "tab",
+        "label": "bmv & lechacal",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "d90bf75a.6a7e5",
+        "type": "tab",
+        "label": "Axpert King 5Kw 48v",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "d0b82b2e.e10cc",
+        "type": "tab",
+        "label": "SOC control",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "2907f506.466f2a",
+        "type": "tab",
+        "label": "BMS",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "567ccd8c.354c84",
+        "type": "tab",
+        "label": "Meters",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "19564b21.32eff5",
+        "type": "tab",
+        "label": "Voltronic MKS por Serie",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "6f2753f9.f16924",
+        "type": "tab",
+        "label": "Axpert VM 3Kw 24v",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "c3760d27.e1ce98",
+        "type": "serial-port",
+        "serialport": "/dev/ttyUSB_bmv",
+        "serialbaud": "19200",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "c13dee13.c1dce8",
+        "type": "emoncms-server",
+        "server": "http://localhost/",
+        "name": ""
+    },
+    {
+        "id": "dbee29d0.e8198",
+        "type": "serial-port",
+        "serialport": "/dev/ttyAMA0",
+        "serialbaud": "38400",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "304136cd.e3ba72",
+        "type": "serial-port",
+        "serialport": "/dev/ttyUSB_bmv2",
+        "serialbaud": "19200",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "d38c1c65.42c1f",
+        "type": "serial-port",
+        "serialport": "/dev/ttyUSB_hibrido",
+        "serialbaud": "2400",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\r",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "20000"
+    },
+    {
+        "id": "2feab2c7.c1873e",
+        "type": "serial-port",
+        "serialport": "/dev/ttyUSB_king",
+        "serialbaud": "2400",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\r",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "20000"
+    },
+    {
+        "id": "88ec1814.a229c8",
+        "type": "serial-port",
+        "serialport": "/dev/ttyUSB0",
+        "serialbaud": "2400",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\r",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "1000"
+    },
+    {
+        "id": "62767358.8795a4",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "34811053.1a55d8",
+        "type": "ui_group",
+        "name": "Litio",
+        "tab": "62767358.8795a4",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "3b5d68a0.e1b7c8",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "true",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "f19b243a.6da148",
+        "type": "ui_group",
+        "name": "Plomo",
+        "tab": "62767358.8795a4",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "3073317c.70a93e",
+        "type": "ui_group",
+        "name": "Axpert King 5Kw",
+        "tab": "62767358.8795a4",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "230b3b3d.269dfc",
+        "type": "modbus-client",
+        "name": "usb modbus",
+        "clienttype": "simpleser",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "tcpHost": "127.0.0.1",
+        "tcpPort": "502",
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttyUSB_meter",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": "9600",
+        "serialDatabits": "8",
+        "serialStopbits": "1",
+        "serialParity": "none",
+        "serialConnectionDelay": "100",
+        "unit_id": "1",
+        "commandDelay": "1",
+        "clientTimeout": "1000",
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": "2000",
+        "parallelUnitIdsAllowed": true
+    },
+    {
+        "id": "50c1de99.d97dc",
+        "type": "serial in",
+        "z": "3f2aa594.49e742",
+        "name": "",
+        "serial": "c3760d27.e1ce98",
+        "x": 140,
+        "y": 120,
+        "wires": [
+            [
+                "fbb0d273.765408"
+            ]
+        ]
+    },
+    {
+        "id": "35c6a001.353aa",
+        "type": "debug",
+        "z": "3f2aa594.49e742",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 1050,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "fbb0d273.765408",
+        "type": "function",
+        "z": "3f2aa594.49e742",
+        "name": "ExtractorDatosBMV700",
+        "func": "\nvar data = msg.payload.split(\"\\t\");\n\nswitch(data[0]) {\n        case    'SOC':\n            SOC = parseInt(data[1]);\n            soc_calc = parseFloat(data[1]/10);\n            break;\n        case    'V':\n            VoltajeBateria = parseFloat(data[1]/1000);\n            break;\n        case    'I':\n            AmperiosBateria = parseInt(data[1]);\n            break;\n        case    'P':\n            PotenciaInstantanea = parseInt(data[1]);\n            break;\n        case    'CE':\n            Ahconsumidosinstantaneos = parseFloat(data[1]/1000);\n            break;\n        case    'H2':\n            Profundidadultimadescarga = parseFloat(data[1]/1000);\n            break;\n        case    'H6':\n            Ahdescargados = parseFloat(data[1]/1000);\n            break;\n        case    'H9':\n            Tiempodesdelaultimacargacompleta = parseInt(data[1]);\n            break;\n        case    'H17':\n            kWhdescargadosbateria = parseInt(data[1]/100);\n            break;\n        case    'H18':\n            kWhcargadosbateria = parseInt(data[1]/100);\n            break;\n}\n                \nreturn [\n    {\n        payload: {\n                SOC: SOC,\n                soc_calc: soc_calc,\n                v_calc: VoltajeBateria,\n                I: AmperiosBateria,\n                PotenciaInstantanea: PotenciaInstantanea,\n                Ahconsumidosinstantaneos: Ahconsumidosinstantaneos,\n                Profundidadultimadescarga: Profundidadultimadescarga,\n                Ahdescargados: Ahdescargados,\n                Tiempodesdelaultimacargacompleta: Tiempodesdelaultimacargacompleta,\n                kWhdescargadosbateria: kWhdescargadosbateria,\n                kWhcargadosbateria: kWhcargadosbateria\n        }\n    }\n]",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is deployed.\nSOC=0;\nsoc_calc=0.0;\nVoltajeBateria=0.0;\nAmperiosBateria=0;\nPotenciaInstantanea=0;\nAhconsumidosinstantaneos=0;\nProfundidadultimadescarga=0;\nAhdescargados=0;\nTiempodesdelaultimacargacompleta=0;\nkWhdescargadosbateria=0;\nkWhcargadosbateria=0;\n",
+        "finalize": "",
+        "x": 370,
+        "y": 120,
+        "wires": [
+            [
+                "f90e09e1.5a5788"
+            ]
+        ]
+    },
+    {
+        "id": "5184225.4f9b15c",
+        "type": "delay",
+        "z": "3f2aa594.49e742",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "5",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "x": 820,
+        "y": 120,
+        "wires": [
+            [
+                "35c6a001.353aa",
+                "44d25ac3.b7a0b4",
+                "bcce0e41.09a8d"
+            ]
+        ]
+    },
+    {
+        "id": "44d25ac3.b7a0b4",
+        "type": "emoncms",
+        "z": "3f2aa594.49e742",
+        "name": "Emoncms Push",
+        "emonServer": "c13dee13.c1dce8",
+        "nodegroup": "bmv700a",
+        "datatype": "legacy",
+        "x": 1060,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "9e45d309.7e01d8",
+        "type": "serial in",
+        "z": "3f2aa594.49e742",
+        "name": "",
+        "serial": "304136cd.e3ba72",
+        "x": 150,
+        "y": 280,
+        "wires": [
+            [
+                "a7c88168.bd7548"
+            ]
+        ]
+    },
+    {
+        "id": "a7c88168.bd7548",
+        "type": "function",
+        "z": "3f2aa594.49e742",
+        "name": "ExtractorDatosBMV700",
+        "func": "\nvar data = msg.payload.split(\"\\t\");\n\nswitch(data[0]) {\n        case    'SOC':\n            SOC = parseInt(data[1]);\n            soc_calc = parseFloat(data[1]/10);\n            break;\n        case    'V':\n            VoltajeBateria = parseFloat(data[1]/1000);\n            break;\n        case    'I':\n            AmperiosBateria = parseInt(data[1]);\n            break;\n        case    'P':\n            PotenciaInstantanea = parseInt(data[1]);\n            break;\n        case    'CE':\n            Ahconsumidosinstantaneos = parseFloat(data[1]/1000);\n            break;\n        case    'H2':\n            Profundidadultimadescarga = parseFloat(data[1]/1000);\n            break;\n        case    'H6':\n            Ahdescargados = parseFloat(data[1]/1000);\n            break;\n        case    'H9':\n            Tiempodesdelaultimacargacompleta = parseInt(data[1]);\n            break;\n        case    'H17':\n            kWhdescargadosbateria = parseInt(data[1]/100);\n            break;\n        case    'H18':\n            kWhcargadosbateria = parseInt(data[1]/100);\n            break;\n}\n                \nreturn [\n    {\n        payload: {\n                SOC: SOC,\n                soc_calc: soc_calc,\n                v_calc: VoltajeBateria,\n                I: AmperiosBateria,\n                PotenciaInstantanea: PotenciaInstantanea,\n                Ahconsumidosinstantaneos: Ahconsumidosinstantaneos,\n                Profundidadultimadescarga: Profundidadultimadescarga,\n                Ahdescargados: Ahdescargados,\n                Tiempodesdelaultimacargacompleta: Tiempodesdelaultimacargacompleta,\n                kWhdescargadosbateria: kWhdescargadosbateria,\n                kWhcargadosbateria: kWhcargadosbateria\n        }\n    }\n]",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is deployed.\n\nSOC=0;\nsoc_calc=0.0;\nVoltajeBateria=0.0;\nAmperiosBateria=0;\nPotenciaInstantanea=0;\nAhconsumidosinstantaneos=0;\nProfundidadultimadescarga=0;\nAhdescargados=0;\nTiempodesdelaultimacargacompleta=0;\nkWhdescargadosbateria=0;\nkWhcargadosbateria=0;\n\n",
+        "finalize": "",
+        "x": 370,
+        "y": 280,
+        "wires": [
+            [
+                "b7085473.49132"
+            ]
+        ]
+    },
+    {
+        "id": "f80908d4.05e088",
+        "type": "delay",
+        "z": "3f2aa594.49e742",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "5",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "x": 820,
+        "y": 280,
+        "wires": [
+            [
+                "3590b34d.192924",
+                "29b2176e.1709",
+                "3799cee5.9de032"
+            ]
+        ]
+    },
+    {
+        "id": "3590b34d.192924",
+        "type": "debug",
+        "z": "3f2aa594.49e742",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 1050,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "29b2176e.1709",
+        "type": "emoncms",
+        "z": "3f2aa594.49e742",
+        "name": "Emoncms Push",
+        "emonServer": "c13dee13.c1dce8",
+        "nodegroup": "bmv700b",
+        "datatype": "legacy",
+        "x": 1060,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "db72b15f.7d56d",
+        "type": "inject",
+        "z": "6f2753f9.f16924",
+        "name": "QMUCHGCR",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "GENERIC",
+        "payload": "[81,77,85,67,72,71,67,82,38,52,13]",
+        "payloadType": "bin",
+        "x": 110,
+        "y": 100,
+        "wires": [
+            [
+                "6d6a9aeb.2d46a4"
+            ]
+        ]
+    },
+    {
+        "id": "47253f7e.35f0d8",
+        "type": "debug",
+        "z": "6f2753f9.f16924",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 970,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "1ec83cd8.152ae3",
+        "type": "inject",
+        "z": "6f2753f9.f16924",
+        "name": "QPIGS",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "QPIGS",
+        "payload": "[81,80,73,71,83,183,169,13]",
+        "payloadType": "bin",
+        "x": 100,
+        "y": 160,
+        "wires": [
+            [
+                "6d6a9aeb.2d46a4"
+            ]
+        ]
+    },
+    {
+        "id": "26414891.4fddd8",
+        "type": "inject",
+        "z": "6f2753f9.f16924",
+        "name": "QPIRI",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "QPIRI",
+        "payload": "[81,80,73,82,73,248,84,13]",
+        "payloadType": "bin",
+        "x": 100,
+        "y": 220,
+        "wires": [
+            [
+                "6d6a9aeb.2d46a4"
+            ]
+        ]
+    },
+    {
+        "id": "1af1bfe.967f8c",
+        "type": "serial request",
+        "z": "6f2753f9.f16924",
+        "d": true,
+        "name": "",
+        "serial": "d38c1c65.42c1f",
+        "x": 400,
+        "y": 40,
+        "wires": [
+            [
+                "c0a608b6.e8fc3"
+            ]
+        ]
+    },
+    {
+        "id": "2b2aefb4.19f5e",
+        "type": "function",
+        "z": "6f2753f9.f16924",
+        "name": "ResponseParserGeneric",
+        "func": "\nvar data = msg.payload.substr(1,msg.payload.length-4).split(\" \");\n\nreturn [\n    {\n        payload:data\n    }\n]",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 710,
+        "y": 100,
+        "wires": [
+            [
+                "47253f7e.35f0d8"
+            ]
+        ]
+    },
+    {
+        "id": "1abaf4a2.772193",
+        "type": "function",
+        "z": "6f2753f9.f16924",
+        "name": "ParserQPIGS",
+        "func": "var res = msg.payload.substr(1).split(\" \");\n\nfv2_w=res[19];\nload_w=res[5]\n//bypass=0;\nbypass_w=0;\n\n//Si hay voltaje de Red debemos estar en bypass\nhibrido1_bypass=0\nif (global.get('hibrido1_mode')==\"L\"){\n    bypass_w=load_w;\n    load_w=0;\n}\n\nload_pf=0\nif (parseFloat(res[4]) > 0){\n    load_pf=parseFloat(res[5])/parseFloat(res[4])\n}\n\nreturn [\n    {\n        payload:{\n            \"load_va\":      parseFloat(res[4]),\n\t\t\t\"load_w\":       parseFloat(load_w),\n\t\t\t\"load_percent\": parseInt(res[6]),\n\t\t\t//\"bypass\":       bypass,\n\t\t\t\"bypass_w\":     parseFloat(bypass_w),\n\t\t\t\"bat_v\":        parseFloat(res[8]),\n\t\t\t\"bat_i\":        parseInt(res[15]),\n\t\t\t\"bat_char_i\":   parseInt(res[9]),\n\t\t\t\"bat_soc\":      parseInt(res[10]),\n\t\t\t\"temp\":         parseInt(res[11]),\n\t\t\t\"fv2_i\":        parseFloat(res[12]),\n\t\t\t\"fv2_v\":        parseFloat(res[13]),\n\t\t\t\"fv2_w\":        fv2_w,\n\t\t\t\"fv_sum_w\":     fv2_w,\n            \"bus_hi\":       parseFloat(res[7]),\n            \"status\":       res[16],\n            \"grid_v\":       parseFloat(res[0]),\n            \"grid_hz\":      parseFloat(res[1]),\n            \"load_v\":       parseFloat(res[2]),\n            \"load_hz\":      parseFloat(res[3]),\n            \"load_pf\":      load_pf\n        }\n    }\n]",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 680,
+        "y": 160,
+        "wires": [
+            [
+                "9f947e3d.24acf8",
+                "c5f52881.2e8498"
+            ]
+        ]
+    },
+    {
+        "id": "d532fb6d.816008",
+        "type": "emoncms",
+        "z": "6f2753f9.f16924",
+        "name": "Emoncms Push",
+        "emonServer": "c13dee13.c1dce8",
+        "nodegroup": "emontx",
+        "datatype": "legacy",
+        "x": 980,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "f90e09e1.5a5788",
+        "type": "switch",
+        "z": "3f2aa594.49e742",
+        "name": "Todos los datos?",
+        "property": "payload.SOC",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 610,
+        "y": 120,
+        "wires": [
+            [
+                "5184225.4f9b15c",
+                "add06f33.f639c"
+            ]
+        ]
+    },
+    {
+        "id": "b7085473.49132",
+        "type": "switch",
+        "z": "3f2aa594.49e742",
+        "name": "Todos los datos?",
+        "property": "payload.SOC",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 610,
+        "y": 280,
+        "wires": [
+            [
+                "f80908d4.05e088",
+                "7c5ee92f.8c241"
+            ]
+        ]
+    },
+    {
+        "id": "bcce0e41.09a8d",
+        "type": "link out",
+        "z": "3f2aa594.49e742",
+        "d": true,
+        "name": "OutBMV700",
+        "links": [
+            "e811e0a1.7f8d08"
+        ],
+        "x": 995,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "3799cee5.9de032",
+        "type": "link out",
+        "z": "3f2aa594.49e742",
+        "name": "OutBMV700b",
+        "links": [
+            "9aa6e66c.182858",
+            "dc13444a.fd8f2",
+            "cf754a3d.5e29"
+        ],
+        "x": 995,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "9f947e3d.24acf8",
+        "type": "debug",
+        "z": "6f2753f9.f16924",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "42b9d43e.43c464",
+        "type": "function",
+        "z": "6f2753f9.f16924",
+        "name": "ResponsePrioritys",
+        "func": "\nvar data = msg.payload.substr(1).split(\" \");\n\nhibrido1_bypass=0\nif (global.get('hibrido1_mode')==\"L\"){\n    hibrido1_bypass=1\n}\n\nvar playload = {\n        OutputSource:parseInt(data[16]),\n        ChargerSource:parseInt(data[17]),\n        bypass: hibrido1_bypass\n    };\n\nglobal.set('hibrido1',playload);\n\nreturn [\n    {\n        payload:playload\n    }\n]",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 690,
+        "y": 220,
+        "wires": [
+            [
+                "9f947e3d.24acf8",
+                "c5f52881.2e8498"
+            ]
+        ]
+    },
+    {
+        "id": "3ae2f61d.6c93da",
+        "type": "inject",
+        "z": "6f2753f9.f16924",
+        "name": "POP00",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "GENERIC",
+        "payload": "[80,79,80,48,48,194,72,13]",
+        "payloadType": "bin",
+        "x": 90,
+        "y": 440,
+        "wires": [
+            [
+                "3c3761e1.8a4226"
+            ]
+        ],
+        "info": "00: Utiliti first\n00: Solar first"
+    },
+    {
+        "id": "331cd65f.2ec2e2",
+        "type": "inject",
+        "z": "6f2753f9.f16924",
+        "name": "POP02",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "GENERIC",
+        "payload": "[80,79,80,48,50,226,11,13]",
+        "payloadType": "bin",
+        "x": 90,
+        "y": 480,
+        "wires": [
+            [
+                "3c3761e1.8a4226"
+            ]
+        ],
+        "info": "00: Utiliti first\n02: Solar first"
+    },
+    {
+        "id": "cc7fd178.c21bc",
+        "type": "inject",
+        "z": "6f2753f9.f16924",
+        "name": "QMOD",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "QMOD",
+        "payload": "[81,77,79,68,73,193,13]",
+        "payloadType": "bin",
+        "x": 100,
+        "y": 280,
+        "wires": [
+            [
+                "6d6a9aeb.2d46a4"
+            ]
+        ]
+    },
+    {
+        "id": "c4424d2a.7791d8",
+        "type": "function",
+        "z": "6f2753f9.f16924",
+        "name": "ResponseMode",
+        "func": "\nvar data = msg.payload.substr(1,1).trim();\n\nvar playload = {\n        mode:data\n    };\n\nglobal.set('hibrido1_mode',data);\n\nreturn [\n    {\n        payload:playload\n    }\n]",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 680,
+        "y": 280,
+        "wires": [
+            [
+                "9f947e3d.24acf8"
+            ]
+        ]
+    },
+    {
+        "id": "4cfd530.69d582c",
+        "type": "comment",
+        "z": "6f2753f9.f16924",
+        "name": "Prioridad entrada",
+        "info": "",
+        "x": 100,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "dd5b4e5b.48e288",
+        "type": "comment",
+        "z": "6f2753f9.f16924",
+        "name": "Prioridad carga",
+        "info": "",
+        "x": 420,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "18d25d9f.69ddc2",
+        "type": "inject",
+        "z": "6f2753f9.f16924",
+        "name": "PCP00",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "GENERIC",
+        "payload": "[80,67,80,48,48,141,122,13]",
+        "payloadType": "bin",
+        "x": 410,
+        "y": 440,
+        "wires": [
+            [
+                "8bdd21a0.6a159"
+            ]
+        ],
+        "info": "00 Carga desde Utility\n03 Carga desde sol"
+    },
+    {
+        "id": "fb7dd0c2.f266f8",
+        "type": "comment",
+        "z": "6f2753f9.f16924",
+        "name": "Intensidad de carga",
+        "info": "",
+        "x": 110,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "670e48e3.406a6",
+        "type": "inject",
+        "z": "6f2753f9.f16924",
+        "name": "MUCHGC002",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "GENERIC",
+        "payload": "[77,85,67,72,71,67,48,48,50,181,209,13]",
+        "payloadType": "bin",
+        "x": 110,
+        "y": 580,
+        "wires": [
+            [
+                "ad6e4cc7.61eb9"
+            ]
+        ]
+    },
+    {
+        "id": "512abb14.95fb94",
+        "type": "inject",
+        "z": "6f2753f9.f16924",
+        "name": "MUCHGC010",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "GENERIC",
+        "payload": "[77,85,67,72,71,67,48,49,48,166,162,13]",
+        "payloadType": "bin",
+        "x": 110,
+        "y": 620,
+        "wires": [
+            [
+                "ad6e4cc7.61eb9"
+            ]
+        ]
+    },
+    {
+        "id": "1f987d3a.5ed963",
+        "type": "inject",
+        "z": "6f2753f9.f16924",
+        "name": "MUCHGC020",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "GENERIC",
+        "payload": "[77,85,67,72,71,67,48,50,48,243,241,13]",
+        "payloadType": "bin",
+        "x": 110,
+        "y": 660,
+        "wires": [
+            [
+                "ad6e4cc7.61eb9"
+            ]
+        ]
+    },
+    {
+        "id": "46b9893c.b10728",
+        "type": "inject",
+        "z": "6f2753f9.f16924",
+        "name": "MUCHGC030",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "GENERIC",
+        "payload": "[77,85,67,72,71,67,48,51,48,192,192,13]",
+        "payloadType": "bin",
+        "x": 110,
+        "y": 700,
+        "wires": [
+            [
+                "ad6e4cc7.61eb9"
+            ]
+        ]
+    },
+    {
+        "id": "5f86a33.7eb7edc",
+        "type": "inject",
+        "z": "6f2753f9.f16924",
+        "name": "MUCHGC040",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "GENERIC",
+        "payload": "MUCHGC040",
+        "payloadType": "str",
+        "x": 110,
+        "y": 740,
+        "wires": [
+            [
+                "40373040.fe32d8"
+            ]
+        ]
+    },
+    {
+        "id": "42f469dc.fe01b8",
+        "type": "inject",
+        "z": "6f2753f9.f16924",
+        "name": "PCP03",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "GENERIC",
+        "payload": "[80,67,80,48,51,189,25,13]",
+        "payloadType": "bin",
+        "x": 410,
+        "y": 480,
+        "wires": [
+            [
+                "8bdd21a0.6a159"
+            ]
+        ]
+    },
+    {
+        "id": "fbbb01c4.e79c2",
+        "type": "comment",
+        "z": "6f2753f9.f16924",
+        "name": "Info",
+        "info": "",
+        "x": 70,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "ed419a95.69c99",
+        "type": "inject",
+        "z": "d90bf75a.6a7e5",
+        "name": "QMUCHGCR",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "GENERIC",
+        "payload": "[81,77,85,67,72,71,67,82,38,52,13]",
+        "payloadType": "bin",
+        "x": 110,
+        "y": 100,
+        "wires": [
+            [
+                "e0a97e4c.d6e368"
+            ]
+        ]
+    },
+    {
+        "id": "163b7172.781487",
+        "type": "debug",
+        "z": "d90bf75a.6a7e5",
+        "name": "respuesta hibrido 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 990,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "12f29a34.c39966",
+        "type": "inject",
+        "z": "d90bf75a.6a7e5",
+        "name": "QPIGS",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "QPIGS",
+        "payload": "[81,80,73,71,83,183,169,13]",
+        "payloadType": "bin",
+        "x": 100,
+        "y": 160,
+        "wires": [
+            [
+                "e0a97e4c.d6e368"
+            ]
+        ]
+    },
+    {
+        "id": "3483fb4c.0c0a14",
+        "type": "inject",
+        "z": "d90bf75a.6a7e5",
+        "name": "QPIRI",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "QPIRI",
+        "payload": "[81,80,73,82,73,248,84,13]",
+        "payloadType": "bin",
+        "x": 100,
+        "y": 220,
+        "wires": [
+            [
+                "e0a97e4c.d6e368"
+            ]
+        ]
+    },
+    {
+        "id": "501c87c9.ef19f",
+        "type": "serial request",
+        "z": "d90bf75a.6a7e5",
+        "name": "",
+        "serial": "2feab2c7.c1873e",
+        "x": 390,
+        "y": 40,
+        "wires": [
+            [
+                "7ced7890.912c6"
+            ]
+        ]
+    },
+    {
+        "id": "6e257f63.fad12",
+        "type": "function",
+        "z": "d90bf75a.6a7e5",
+        "name": "ResponseParserGeneric",
+        "func": "\nvar data = msg.payload.substr(1,msg.payload.length-4).split(\" \");\n\nreturn [\n    {\n        payload:data\n    }\n]",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 710,
+        "y": 100,
+        "wires": [
+            [
+                "163b7172.781487"
+            ]
+        ]
+    },
+    {
+        "id": "39770a81.8633b6",
+        "type": "function",
+        "z": "d90bf75a.6a7e5",
+        "name": "ParserQPIGS",
+        "func": "var res = msg.payload.substr(1).split(\" \");\n\nfv_w=res[19]*1.16;\nload_w=res[5]\nbypass=0;\nbypass_w=0;\n\n//Si hay voltaje de Red debemos estar en bypass\n//if (parseFloat(res[0])>0){\nif (global.get('hibrido2_mode')!=\"B\"){\n    bypass_w=load_w;\n    load_w=0;\n    bypass=1;\n}\n\nload_pf=0\nif (parseFloat(res[4]) > 0){\n    load_pf=parseFloat(res[5])/parseFloat(res[4])\n}\n\nreturn [\n    {\n        payload:{\n            \"load_va\":      parseFloat(res[4]),\n\t\t\t\"load_w\":       parseFloat(load_w),\n\t\t\t\"load_percent\": parseInt(res[6]),\n\t\t\t\"bypass\":       bypass,\n\t\t\t\"bypass_w\":     parseFloat(bypass_w),\n\t\t\t\"bat_v\":        parseFloat(res[8]),\n\t\t\t\"bat_i\":        parseInt(res[15]),\n\t\t\t\"bat_char_i\":   parseInt(res[9]),\n\t\t\t\"bat_soc\":      parseInt(res[10]),\n\t\t\t\"temp\":         parseInt(res[11]),\n\t\t\t\"fv_i\":         parseFloat(res[12]),\n\t\t\t\"fv_v\":         parseFloat(res[13]),\n\t\t\t\"fv_w\":         fv_w,\n\t\t\t\"fv_w_b\":       res[12]*res[13],\n\t\t\t\"bus_hi\":       parseFloat(res[7]),\n            \"status\":       res[16],\n            \"grid_v\":       parseFloat(res[0]),\n            \"grid_hz\":      parseFloat(res[1]),\n            \"load_v\":       parseFloat(res[2]),\n            \"load_hz\":      parseFloat(res[3]),\n            \"load_pf\":      load_pf\n        }\n    }\n]",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 680,
+        "y": 160,
+        "wires": [
+            [
+                "1ded7b9e.ac167c",
+                "336bb1cc.25ea06"
+            ]
+        ]
+    },
+    {
+        "id": "9e6bf6e3.21c4d8",
+        "type": "emoncms",
+        "z": "d90bf75a.6a7e5",
+        "name": "Emoncms Push",
+        "emonServer": "c13dee13.c1dce8",
+        "nodegroup": "king",
+        "datatype": "legacy",
+        "x": 980,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "1ded7b9e.ac167c",
+        "type": "debug",
+        "z": "d90bf75a.6a7e5",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "94d4516.a6ab9b",
+        "type": "function",
+        "z": "d90bf75a.6a7e5",
+        "name": "ResponsePrioritys",
+        "func": "\nvar data = msg.payload.substr(1).split(\" \");\n\nhibrido2_bypass=0\nif (global.get('hibrido2_mode')!=\"B\"){\n    hibrido2_bypass=1\n}\n\nvar playload = {\n        OutputSource:parseInt(data[16]),\n        ChargerSource:parseInt(data[17]),\n        bypass: hibrido2_bypass,\n        operationLogic: parseInt(data[26])\n    };\n\nglobal.set('hibrido2',playload);\n\nreturn [\n    {\n        payload:playload\n    }\n]",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 690,
+        "y": 220,
+        "wires": [
+            [
+                "1ded7b9e.ac167c",
+                "336bb1cc.25ea06"
+            ]
+        ]
+    },
+    {
+        "id": "fa307f5c.70048",
+        "type": "inject",
+        "z": "d90bf75a.6a7e5",
+        "name": "QMOD",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "QMOD",
+        "payload": "[81,77,79,68,73,193,13]",
+        "payloadType": "bin",
+        "x": 100,
+        "y": 280,
+        "wires": [
+            [
+                "e0a97e4c.d6e368"
+            ]
+        ]
+    },
+    {
+        "id": "30268415.fc26d4",
+        "type": "function",
+        "z": "d90bf75a.6a7e5",
+        "name": "ResponseMode",
+        "func": "\nvar data = msg.payload.substr(1,1).trim();\n\nmode=0;\nswitch(data){\n    case \"B\": //Battery\n        mode=2;\n        break;\n    case \"E\": //Eco\n        mode=3;\n        break;\n}\n\nvar playload = {\n        'mode':mode\n    };\n\nglobal.set('hibrido2_mode',data);\n\nreturn [\n    {\n        payload:playload\n    }\n]",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 680,
+        "y": 280,
+        "wires": [
+            [
+                "1ded7b9e.ac167c",
+                "336bb1cc.25ea06"
+            ]
+        ]
+    },
+    {
+        "id": "cfd947b5.b0fe4",
+        "type": "comment",
+        "z": "d90bf75a.6a7e5",
+        "name": "Info",
+        "info": "",
+        "x": 70,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "33a3e1d4.48aa7e",
+        "type": "function",
+        "z": "6f2753f9.f16924",
+        "name": "CRCTJ",
+        "func": "    //  Algoritmo para lanzar los comandos hacia Voltronics por puerto serie con CRC propietario\n    //  Algoritmo realizado por Tejota   solar@tejota.net\n    var topic = (msg.payload) + (\" \") + (msg.topic); // Topic con el comando string y posible descripcion\n    var comandobuffer = Buffer.from(msg.payload);   // pasando a buffer el string del comando          \n    var crc = 0x0000;                              //  inicio del crc\n    for (tj = 0; tj < comandobuffer.length; tj++)    // scaneo del buffer\n            {\n        const byte = comandobuffer[tj];          // analizando el byte para aplicarle el crc16xmodem\n        tejota = (crc >>> 8) & 0xff;\n        tejota ^= byte & 0xff;\n        tejota ^= tejota >>> 4;\n        crc = (crc << 8) & 0xffff;            //  Algoritmo\n        crc ^= tejota;                       //  crc16 xmodem \n        tejota = (tejota << 5) & 0xffff;    //   sin tabla estatica\n        crc ^= tejota;\n        tejota = (tejota << 7) & 0xffff;\n        crc ^= tejota;\n            }                            // resultante crc numerico \n    var crchexastring = crc.toString(16).padStart(4,'0');  // crc numerico a string hexa añadiendo ceros a izquierda si es preciso\n    var crchexabuffer = Buffer.from(crchexastring, \"hex\"); // buffer del crchexa\n    for (mdk=0; mdk < crchexabuffer.length; mdk++)  // scaneo del buffer\n            {\n            if (crchexabuffer[mdk]==10 || crchexabuffer[mdk]==13 || crchexabuffer[mdk]==40)   // Exceptuando estos bytes mdk \n                    {\n                        crchexabuffer[mdk]++;  // se pone el byte siguiente si es alguno de las excepciones mdk\n                    }\n            }        \n    const retornodecarro = Buffer.from(\"\\r\");\n    var crctotalbuffer = [comandobuffer, crchexabuffer, retornodecarro];  // construyendo el buffer final hacia el hibrido\n    msg.payload = Buffer.concat(crctotalbuffer);\n    msg.topic = topic;\n    return msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1020,
+        "y": 40,
+        "wires": [
+            [
+                "e2a844ca.ffc448"
+            ]
+        ]
+    },
+    {
+        "id": "1efa9381.bb17ec",
+        "type": "inject",
+        "z": "6f2753f9.f16924",
+        "name": "MUCHGC050",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "GENERIC",
+        "payload": "MUCHGC050",
+        "payloadType": "str",
+        "x": 110,
+        "y": 780,
+        "wires": [
+            [
+                "40373040.fe32d8"
+            ]
+        ]
+    },
+    {
+        "id": "b7b0f2ab.b4e6e",
+        "type": "inject",
+        "z": "6f2753f9.f16924",
+        "name": "MUCHGC060",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "GENERIC",
+        "payload": "MUCHGC060",
+        "payloadType": "str",
+        "x": 110,
+        "y": 820,
+        "wires": [
+            [
+                "40373040.fe32d8"
+            ]
+        ]
+    },
+    {
+        "id": "d4cfefe9.02213",
+        "type": "inject",
+        "z": "19564b21.32eff5",
+        "name": "QPIRI Configuracion",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "7",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "Configuracion",
+        "payload": "QPIRI",
+        "payloadType": "str",
+        "x": 160,
+        "y": 700,
+        "wires": [
+            [
+                "cd3d2ac7.1d46a8"
+            ]
+        ]
+    },
+    {
+        "id": "d9f62829.05de08",
+        "type": "inject",
+        "z": "19564b21.32eff5",
+        "name": "QFLAG Miscelanea",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "7",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "Miscelanea",
+        "payload": "QFLAG",
+        "payloadType": "str",
+        "x": 160,
+        "y": 660,
+        "wires": [
+            [
+                "cd3d2ac7.1d46a8"
+            ]
+        ]
+    },
+    {
+        "id": "2d7e0c41.621c44",
+        "type": "inject",
+        "z": "19564b21.32eff5",
+        "name": "QBEQI Ecualizacion Bateria",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "Ecualizacion Bateria",
+        "payload": "QBEQI",
+        "payloadType": "str",
+        "x": 190,
+        "y": 740,
+        "wires": [
+            [
+                "cd3d2ac7.1d46a8"
+            ]
+        ]
+    },
+    {
+        "id": "5ecd3155.2c11b",
+        "type": "inject",
+        "z": "19564b21.32eff5",
+        "name": "QPIWS Informacion Warnings",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "Informacion Warnings",
+        "payload": "QPIWS",
+        "payloadType": "str",
+        "x": 190,
+        "y": 780,
+        "wires": [
+            [
+                "cd3d2ac7.1d46a8"
+            ]
+        ]
+    },
+    {
+        "id": "61b5f624.ac2ff8",
+        "type": "inject",
+        "z": "19564b21.32eff5",
+        "name": "QPIGS Estado General",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "4",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "Estado General",
+        "payload": "QPIGS",
+        "payloadType": "str",
+        "x": 170,
+        "y": 540,
+        "wires": [
+            [
+                "cd3d2ac7.1d46a8"
+            ]
+        ]
+    },
+    {
+        "id": "61774ebc.bdb58",
+        "type": "inject",
+        "z": "19564b21.32eff5",
+        "name": "QID Numero de Serie",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "Numero de Serie",
+        "payload": "QID",
+        "payloadType": "str",
+        "x": 160,
+        "y": 500,
+        "wires": [
+            [
+                "cd3d2ac7.1d46a8"
+            ]
+        ]
+    },
+    {
+        "id": "f2b7cde4.f8323",
+        "type": "function",
+        "z": "19564b21.32eff5",
+        "name": "CRCTJ",
+        "func": "    //  Algoritmo para lanzar los comandos hacia Voltronics por puerto serie con CRC propietario\n    //  Algoritmo realizado por Tejota   solar@tejota.net\n    var topic = (msg.payload) + (\" \") + (msg.topic); // Topic con el comando string y posible descripcion\n    var comandobuffer = Buffer.from(msg.payload);   // pasando a buffer el string del comando          \n    var crc = 0x0000;                              //  inicio del crc\n    for (tj = 0; tj < comandobuffer.length; tj++)    // scaneo del buffer\n            {\n        const byte = comandobuffer[tj];          // analizando el byte para aplicarle el crc16xmodem\n        tejota = (crc >>> 8) & 0xff;\n        tejota ^= byte & 0xff;\n        tejota ^= tejota >>> 4;\n        crc = (crc << 8) & 0xffff;            //  Algoritmo\n        crc ^= tejota;                       //  crc16 xmodem \n        tejota = (tejota << 5) & 0xffff;    //   sin tabla estatica\n        crc ^= tejota;\n        tejota = (tejota << 7) & 0xffff;\n        crc ^= tejota;\n            }                            // resultante crc numerico \n    var crchexastring = crc.toString(16).padStart(4,'0');  // crc numerico a string hexa añadiendo ceros a izquierda si es preciso\n    var crchexabuffer = Buffer.from(crchexastring, \"hex\"); // buffer del crchexa\n    for (mdk=0; mdk < crchexabuffer.length; mdk++)  // scaneo del buffer\n            {\n            if (crchexabuffer[mdk]==10 || crchexabuffer[mdk]==13 || crchexabuffer[mdk]==40)   // Exceptuando estos bytes mdk \n                    {\n                        crchexabuffer[mdk]++;  // se pone el byte siguiente si es alguno de las excepciones mdk\n                    }\n            }        \n    const retornodecarro = Buffer.from(\"\\r\");\n    var crctotalbuffer = [comandobuffer, crchexabuffer, retornodecarro];  // construyendo el buffer final hacia el hibrido\n    msg.payload = Buffer.concat(crctotalbuffer);\n    msg.topic = topic;\n    return msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 300,
+        "y": 160,
+        "wires": [
+            [
+                "7545bcea.c00be4"
+            ]
+        ]
+    },
+    {
+        "id": "3e8e715b.5ee93e",
+        "type": "debug",
+        "z": "19564b21.32eff5",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1170,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "458ab114.214cc",
+        "type": "inject",
+        "z": "19564b21.32eff5",
+        "name": "QVFW Firmware CPU1",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "Version CPU1",
+        "payload": "QVFW",
+        "payloadType": "str",
+        "x": 170,
+        "y": 580,
+        "wires": [
+            [
+                "cd3d2ac7.1d46a8"
+            ]
+        ]
+    },
+    {
+        "id": "ebc28d21.a11f6",
+        "type": "inject",
+        "z": "19564b21.32eff5",
+        "name": "QVFW2 Firmware CPU2",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "Firmware CPU2",
+        "payload": "QVFW2",
+        "payloadType": "str",
+        "x": 170,
+        "y": 620,
+        "wires": [
+            [
+                "cd3d2ac7.1d46a8"
+            ]
+        ]
+    },
+    {
+        "id": "cd3d2ac7.1d46a8",
+        "type": "link out",
+        "z": "19564b21.32eff5",
+        "name": "ParaCRCTJ",
+        "links": [
+            "319f8dab.b39e82"
+        ],
+        "x": 430,
+        "y": 660,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "29d04a1f.362d16",
+        "type": "comment",
+        "z": "19564b21.32eff5",
+        "name": "Comandos de monitorizacion",
+        "info": "Comandos de Monitorizacion",
+        "x": 160,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "319f8dab.b39e82",
+        "type": "link in",
+        "z": "19564b21.32eff5",
+        "name": "CRCTJWelcome",
+        "links": [
+            "cd3d2ac7.1d46a8"
+        ],
+        "x": 140,
+        "y": 160,
+        "wires": [
+            [
+                "f2b7cde4.f8323"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "37e0fc60.268e84",
+        "type": "link out",
+        "z": "19564b21.32eff5",
+        "name": "ParaExtractores",
+        "links": [
+            "9d52fd26.2692a"
+        ],
+        "x": 700,
+        "y": 160,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "3853f47d.20b97c",
+        "type": "switch",
+        "z": "19564b21.32eff5",
+        "name": "Repartidor Datos Lecturas",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "QID",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "QPIGS",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "CPU1",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "QVFW2",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "QFLAG",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "QPIRI",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "QBEQI",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "QPIWS",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "QMOD",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 9,
+        "x": 390,
+        "y": 360,
+        "wires": [
+            [
+                "7e3afdaa.d84a14"
+            ],
+            [
+                "352dccd5.c07ce4"
+            ],
+            [
+                "7fe9a5f8.3302dc"
+            ],
+            [
+                "505dc93e.025028"
+            ],
+            [
+                "2e34f984.dd4516"
+            ],
+            [
+                "b11d5d54.57ada"
+            ],
+            [
+                "fb4c23a9.f5653"
+            ],
+            [
+                "5592a1b4.8fc35"
+            ],
+            [
+                "dcec16ee.014fd8"
+            ]
+        ]
+    },
+    {
+        "id": "9d52fd26.2692a",
+        "type": "link in",
+        "z": "19564b21.32eff5",
+        "name": "ExtractoresWelcome",
+        "links": [
+            "37e0fc60.268e84"
+        ],
+        "x": 150,
+        "y": 360,
+        "wires": [
+            [
+                "3853f47d.20b97c"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "7163cfa9.53c4d",
+        "type": "comment",
+        "z": "19564b21.32eff5",
+        "name": "Repartiendo por topic",
+        "info": "",
+        "x": 380,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "2e34f984.dd4516",
+        "type": "function",
+        "z": "19564b21.32eff5",
+        "name": "QFLAGExtraccion",
+        "func": "var output = msg.payload.substr(1, 11);\nvar E = output.indexOf(\"E\")+1;\nvar D = output.indexOf(\"D\");\nvar enables = output.substr(E, (D-E));\nvar disables = output.substr(D+1);\nswitch (enables.includes(\"a\")){\n    case true:\n        buzzer = 1;\n        break;\n    case false:    \n        buzzer = 0;\n}    \nswitch (enables.includes(\"b\")){\n    case true:\n        bypassoverload = 1;\n        break;\n    case false:\n        bypassoverload = 0;\n        break;\n} \nswitch (enables.includes(\"k\")){\n    case true:\n        guardapantallalcd = 1;\n        break;\n    case false:    \n        guardapantallalcd = 0;\n}    \nswitch (enables.includes(\"j\")){\n    case true:\n        powersaving = 1;\n        break;\n    case false:\n        powersaving = 0;\n        break;\n} \nswitch (enables.includes(\"u\")){\n    case true:\n        overloadrestart = 1;\n        break;\n    case false:    \n        overloadrestart = 0;\n}    \nswitch (enables.includes(\"v\")){\n    case true:\n        overtemperaturerestart = 1;\n        break;\n    case false:\n        overtemperaturerestart = 0;\n        break;\n}\nswitch (enables.includes(\"x\")){\n    case true:\n        luzlcd = 1;\n        break;\n    case false:\n        luzlcd = 0;\n        break;\n} \nswitch (enables.includes(\"y\")){\n    case true:\n        pitidosifuenteprimariafalla = 1;\n        break;\n    case false:\n        pitidosifuenteprimariafalla = 0;\n        break;\n} \nswitch (enables.includes(\"z\")){\n    case true:\n        grabarerrores = 1;\n        break;\n    case false:\n        grabarerrores = 0;\n        break;\n} \nreturn [\n    {\n        payload: {\n                buzzer: buzzer,\n                bypassoverload: bypassoverload,\n                guardapantallalcd: guardapantallalcd,\n                powersaving: powersaving,\n                overloadrestart: overloadrestart,\n                overtemperaturerestart: overtemperaturerestart,\n                luzlcd: luzlcd,\n                pitidosifuenteprimariafalla: pitidosifuenteprimariafalla,\n                grabarerrores: grabarerrores,\n                 }\n    }\n]\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 650,
+        "y": 420,
+        "wires": [
+            [
+                "2cb73b17.d23c34"
+            ]
+        ]
+    },
+    {
+        "id": "352dccd5.c07ce4",
+        "type": "function",
+        "z": "19564b21.32eff5",
+        "name": "QPIGSExtraccion",
+        "func": "var output = msg.payload.split(\" \");\nlet voltajered = parseFloat(output[0].slice(1, 5));\nlet frecuenciared = parseFloat(output[1]);\nlet voltajesalida = parseFloat(output[2]);\nlet frecuenciasalida = parseFloat(output[3]);\nlet potenciaparentesalida = parseInt(output[4]);\nlet potenciaactivasalida = parseInt(output[5]);\nlet porcentajecargasalida = parseInt(output[6]);\nlet voltajebusalta = parseInt(output[7]);\nlet voltajebateria = parseFloat(output[8]);\nlet amperioscargabat = parseInt(output[9]);\nlet capacidadbateria = parseInt(output[10])\nlet temperaturainversor = parseInt(output[11]);\nlet amperiosenplaca = parseInt(output[12]);\nlet voltajeenplaca = parseInt(output[13]);\nlet voltajescc = parseFloat(output[14]);\nlet amperiosdescargabat = parseInt(output[15]);\nlet prioridadSBU = parseInt(output[16].slice(0,1));\nlet estadoconf = parseInt(output[16].slice(1,2));\nlet estadoscc = parseInt(output[16].slice(2,3));\nlet cargasconectadas = parseInt(output[16].slice(3,4));\nlet voltajeconstantemientrascarga = parseInt(output[16].slice(4,5));\nlet estadodecargageneral = parseInt(output[16].slice(5,6));\nlet estadodecargasolar = parseInt(output[16].slice(6,7));\nlet estadodecargared = parseInt(output[16].slice(7,9));\nlet potenciaenplaca = parseInt(output[19]);\nlet estadodelmppt = parseInt(output[20].slice(0,1));\nlet estadodelswitch = parseInt(output[20].slice(1,2));\n/*var numerodeserie = flow.get(numerodeserie);*/\nreturn [\n    {\n        payload: {\n                voltajered: voltajered,\n                frecuenciared: frecuenciared,\n                voltajesalida: voltajesalida,\n                frecuenciasalida: frecuenciasalida,\n                potenciaparentesalida: potenciaparentesalida,\n                potenciaactivasalida: potenciaactivasalida,\n                porcentajecargasalida: porcentajecargasalida,\n                voltajebateria: voltajebateria,\n                amperiosdescargabat: amperiosdescargabat,\n                amperioscargabat: amperioscargabat,\n                temperaturainversor: temperaturainversor,\n                potenciaenplaca: potenciaenplaca,\n                voltajeenplaca: voltajeenplaca,\n                estadodelmppt: estadodelmppt,\n                cargasconectadas: cargasconectadas,\n                voltajebusalta: voltajebusalta,\n                capacidadbateria: capacidadbateria,\n                amperiosenplaca: amperiosenplaca, \n                voltajescc: voltajescc,\n                prioridadSBU: prioridadSBU,\n                estadoconf: estadoconf,\n                estadoscc: estadoscc,\n                voltajeconstantemientrascarga: voltajeconstantemientrascarga,\n                estadodecargageneral: estadodecargageneral,\n                estadodecargasolar: estadodecargasolar,\n                estadodecargared: estadodecargared,\n                estadodelswitch: estadodelswitch\n                } ,\n/*        topic: {numerodeserie: numerodeserie}*/\n    }\n];",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 650,
+        "y": 300,
+        "wires": [
+            [
+                "2cb73b17.d23c34"
+            ]
+        ]
+    },
+    {
+        "id": "b11d5d54.57ada",
+        "type": "function",
+        "z": "19564b21.32eff5",
+        "name": "QPIRIExtraccion",
+        "func": "var output = msg.payload.split(\" \");\nlet voltajeredconf = parseFloat((output[0].slice(1, 5)));\nlet amperiosredmaxconf = parseFloat(output[1]);\nlet voltajesalidaconf = parseFloat(output[2]);\nlet frecuenciasalidaconf = parseFloat(output[3]);\nlet amperiossalidaconf = parseFloat(output[4]);\nlet potenciaaparentesalidaconf = parseFloat(output[5]);\nlet potenciaactivasalidaconf = parseFloat(output[6]);\nlet voltajebateriaconf = parseInt(output[7]);\nlet voltajelimitedescargabatconf = parseFloat(output[8]);\nlet voltajelimiterecargabatconf = parseFloat(output[22]);\nlet voltajeminimoparacorteconf = parseFloat(output[9]);\nlet voltajeabsorcionconf = parseFloat(output[10]);\nlet voltajeflotacionconf = parseFloat(output[11]);\nlet tipodebateriaconf = parseInt(output[12]);\nlet amperiosmaxcargadorbatconf = parseInt(output[13]);\nlet amperiosmaxtotalesabatconf = parseInt(output[14]);\nlet rangovoltajedentradaconf = parseInt(output[15]);\nlet prioridadfuentesalidaconf = parseInt(output[16]);\nlet prioridadcargadorbatconf = parseInt(output[17]);\nlet maximonumeroparalelosconf = parseInt(output[18]);\nlet tipodemaquina = parseInt(output[19]);\nlet tipodehibridoconf = parseInt(output[20]);\nlet tipodesalidaparaleloconf = parseInt(output[21]);\nlet potenciasolarparaleloconf = parseInt(output[23]);\nlet potenciasolarbalanceconf = parseInt(output[24]);\nreturn [\n    {\n        payload: {\n                voltajeredconf: voltajeredconf,\n                amperiosredmaxconf: amperiosredmaxconf,\n                voltajesalidaconf: voltajesalidaconf,\n                frecuenciasalidaconf: frecuenciasalidaconf,\n                amperiossalidaconf: amperiossalidaconf,\n                potenciaaparentesalidaconf: potenciaaparentesalidaconf,\n                potenciaactivasalidaconf: potenciaactivasalidaconf,\n                voltajebateriaconf: voltajebateriaconf,\n                voltajelimiterecargabatconf: voltajelimiterecargabatconf,\n                voltajelimitedescargabatconf: voltajelimitedescargabatconf,\n                voltajeminimoparacorteconf: voltajeminimoparacorteconf,\n                voltajeabsorcionconf: voltajeabsorcionconf,\n                voltajeflotacionconf: voltajeflotacionconf,\n                tipodebateriaconf: tipodebateriaconf,\n                amperiosmaxcargadorbatconf: amperiosmaxcargadorbatconf,\n                amperiosmaxtotalesabatconf: amperiosmaxtotalesabatconf,\n                rangovoltajedentradaconf: rangovoltajedentradaconf,\n                prioridadfuentesalidaconf: prioridadfuentesalidaconf,\n                prioridadcargadorbatconf: prioridadcargadorbatconf,\n                maximonumeroparalelosconf: maximonumeroparalelosconf,\n                tipodemaquina: tipodemaquina,\n                tipodehibridoconf: tipodehibridoconf,\n                tipodesalidaparaleloconf: tipodesalidaparaleloconf,\n                potenciasolarparaleloconf: potenciasolarparaleloconf,\n                potenciasolarbalanceconf: potenciasolarbalanceconf\n                }\n    }\n]",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 640,
+        "y": 460,
+        "wires": [
+            [
+                "2cb73b17.d23c34"
+            ]
+        ]
+    },
+    {
+        "id": "7fe9a5f8.3302dc",
+        "type": "function",
+        "z": "19564b21.32eff5",
+        "name": "QVFW Extraccion U1",
+        "func": "var output = msg.payload;\nlet Firmware = (output.slice(10, 15));\nreturn [\n    {\n        payload: {\n                Firmware: Firmware\n                 }\n    }\n]",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 660,
+        "y": 340,
+        "wires": [
+            [
+                "2cb73b17.d23c34"
+            ]
+        ]
+    },
+    {
+        "id": "505dc93e.025028",
+        "type": "function",
+        "z": "19564b21.32eff5",
+        "name": "QVFW2 Firmware U2",
+        "func": "var output = msg.payload;\nlet Firmware2 = (output.slice(11, 16));\nreturn [\n    {\n        payload: {\n                Firmware2: Firmware2\n                 }\n    }\n]",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 660,
+        "y": 380,
+        "wires": [
+            [
+                "2cb73b17.d23c34"
+            ]
+        ]
+    },
+    {
+        "id": "fb4c23a9.f5653",
+        "type": "function",
+        "z": "19564b21.32eff5",
+        "name": "QBEQI Ecu Extrac",
+        "func": "var output = msg.payload.split(\" \");\nlet activacionecualizacion = parseInt(output[0].slice(1, 2));\nlet tiempoecualizacion = parseInt(output[1]);\nlet diasentreecualizaciones = parseInt(output[2]);\nlet maxamperiosparaecualizar = parseInt(output[3]);\nlet diasquefaltanparaecualizar = parseInt(output[4]);\nlet voltajedeecualizacion = parseFloat(output[5]);\nlet tiempodeabsorcion = parseInt(output[6]);\nlet timeoutecualizacion = parseInt(output[7]);\nreturn [\n    {\n        payload: {\n                activacionecualizacion: activacionecualizacion,\n                tiempoecualizacion: tiempoecualizacion,\n                diasentreecualizaciones: diasentreecualizaciones,\n                maxamperiosparaecualizar: maxamperiosparaecualizar,\n                diasquefaltanparaecualizar: diasquefaltanparaecualizar,\n                voltajedeecualizacion: voltajedeecualizacion,\n                tiempodeabsorcion: tiempodeabsorcion,\n                timeoutecualizacion: timeoutecualizacion\n                 }\n    }\n]",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 650,
+        "y": 500,
+        "wires": [
+            [
+                "2cb73b17.d23c34"
+            ]
+        ]
+    },
+    {
+        "id": "7e3afdaa.d84a14",
+        "type": "function",
+        "z": "19564b21.32eff5",
+        "name": "QID Nº Serie Extrac",
+        "func": "var numerodeserie = msg.payload.slice(1, 15);\nflow.set('numerodeserie', numerodeserie);\nreturn [\n    {\n        payload: {\n                numerodeserie: numerodeserie\n                 }\n    }\n];\n// Numero de Serie va a flow o incluso podria ir a global para identificar en paralelos ",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 660,
+        "y": 260,
+        "wires": [
+            [
+                "2cb73b17.d23c34"
+            ]
+        ]
+    },
+    {
+        "id": "f25ab0ee.65fde",
+        "type": "comment",
+        "z": "19564b21.32eff5",
+        "name": "Extractores",
+        "info": "",
+        "x": 670,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "5592a1b4.8fc35",
+        "type": "function",
+        "z": "19564b21.32eff5",
+        "name": "QPIWS Warnings Extrac",
+        "func": "var output = msg.payload;\nlet reservado = parseInt(output.slice(1, 2));\nlet falloinversor = parseInt(output.slice(2, 3));\nlet fallo08voltajebusalto = parseInt(output.slice(3, 4));\nlet fallo52voltajebusbajo = parseInt(output.slice(4, 5));\nlet fallo09softwarebus = parseInt(output.slice(5, 6));\nlet peligronoacinput = parseFloat(output.slice(6, 7));\nlet peligrocortopv = parseInt(output.slice(7, 8));\nlet fallo58voltajeinversorbajo = parseInt(output.slice(8, 9));\nlet fallo06voltajeinversoralto = parseInt(output.slice(9, 10));\nlet peligro02sobretemperatura = parseInt(output.slice(10, 11));\nlet peligro01ventilador = parseInt(output.slice(11, 12));\nlet peligro03altovoltajebateria = parseInt(output.slice(12, 13));\nlet peligro04bajovoltajebateria = parseInt(output.slice(13, 14));\nlet peligro07sobrecargar = parseInt(output.slice(14, 15));\nlet peligrobateriashutdown = parseInt(output.slice(15, 16));\nlet peligro10bateriaderating = parseInt(output.slice(16, 17));\nlet peligroeeprom = parseInt(output.slice(17, 18));\nlet fallo51sobrecorriente = parseInt(output.slice(18, 19));\nlet fallosoftwareinversor = parseInt(output.slice(19, 20));\nlet falloautotest = parseInt(output.slice(20, 21));\nlet fallo55continuaenac = parseInt(output.slice(21, 22));\nlet fallo56bateriaabierta = parseInt(output.slice(22, 23));\nlet fallo57sensorcorriente = parseInt(output.slice(23, 24));\nlet fallocortobateria = parseInt(output.slice(24, 25));\nlet peligrolimitepotencia = parseInt(output.slice(25, 26));\nlet peligro13altovoltajeplaca = parseInt(output.slice(26, 27));\nlet fallompptsobrecarga = parseInt(output.slice(27, 28));\nlet peligro14mpptsobrecarga = parseInt(output.slice(28, 29));\nlet peligro12bateriabajaparamppt = parseInt(output.slice(29, 30));\nreturn [\n    {\n        payload: {\n            falloinversor: falloinversor,\n            fallo08voltajebusalto: fallo08voltajebusalto,\n            fallo52voltajebusbajo: fallo52voltajebusbajo,\n            fallo09softwarebus: fallo09softwarebus,\n            peligronoacinput: peligronoacinput,\n            peligrocortopv: peligrocortopv,\n            fallo06voltajeinversoralto: fallo06voltajeinversoralto,\n            peligro02sobretemperatura: peligro02sobretemperatura,\n            peligro01ventilador: peligro01ventilador,\n            peligro03altovoltajebateria: peligro03altovoltajebateria,\n            peligro04bajovoltajebateria: peligro04bajovoltajebateria,\n            peligro07sobrecargar: peligro07sobrecargar,\n            peligrobateriashutdown: peligrobateriashutdown,\n            peligro10bateriaderating: peligro10bateriaderating,\n            peligroeeprom: peligroeeprom,\n            fallo51sobrecorriente: fallo51sobrecorriente,\n            fallosoftwareinversor: fallosoftwareinversor,\n            falloautotest: falloautotest,\n            fallo55continuaenac: fallo55continuaenac,\n            fallo56bateriaabierta: fallo56bateriaabierta,\n            fallo57sensorcorriente: fallo57sensorcorriente,\n            fallocortobateria: fallocortobateria,\n            peligro13altovoltajeplaca: peligro13altovoltajeplaca,\n            fallompptsobrecarga: fallompptsobrecarga,\n            peligro14mpptsobrecarga: peligro14mpptsobrecarga,\n            peligro12bateriabajaparamppt: peligro12bateriabajaparamppt\n                 }\n    }\n]",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 670,
+        "y": 540,
+        "wires": [
+            [
+                "2cb73b17.d23c34"
+            ]
+        ]
+    },
+    {
+        "id": "2cb73b17.d23c34",
+        "type": "join",
+        "z": "19564b21.32eff5",
+        "name": "Juntando Todo 4 s",
+        "mode": "custom",
+        "build": "merged",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "4",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 910,
+        "y": 380,
+        "wires": [
+            [
+                "565c63f0.2649fc"
+            ]
+        ]
+    },
+    {
+        "id": "ea295d26.2fccd",
+        "type": "link out",
+        "z": "19564b21.32eff5",
+        "name": "TodasLecturasHibrido",
+        "links": [],
+        "x": 1060,
+        "y": 460,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "4bcb3d1b.5ea574",
+        "type": "comment",
+        "z": "19564b21.32eff5",
+        "name": "Creando Objeto con todas las lecturas del Hibrido",
+        "info": "",
+        "x": 1040,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "565c63f0.2649fc",
+        "type": "function",
+        "z": "19564b21.32eff5",
+        "name": "Id en topic num serie",
+        "func": "var topic = flow.get('numerodeserie');\nmsg.topic = topic;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1120,
+        "y": 380,
+        "wires": [
+            [
+                "ea295d26.2fccd",
+                "3e8e715b.5ee93e"
+            ]
+        ]
+    },
+    {
+        "id": "fc5f3dc3.947c9",
+        "type": "inject",
+        "z": "19564b21.32eff5",
+        "name": "QMOD Modo de Trabajo",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "Modo de Trabajo",
+        "payload": "QMOD",
+        "payloadType": "str",
+        "x": 170,
+        "y": 820,
+        "wires": [
+            [
+                "cd3d2ac7.1d46a8"
+            ]
+        ]
+    },
+    {
+        "id": "dcec16ee.014fd8",
+        "type": "function",
+        "z": "19564b21.32eff5",
+        "name": "QMOD Extractor",
+        "func": "var output = msg.payload;\nlet mododetrabajo = output.slice(1, 2);\nreturn [{\n    payload: {\n         mododetrabajo: mododetrabajo\n             }\n        }\n       ];",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 640,
+        "y": 580,
+        "wires": [
+            [
+                "2cb73b17.d23c34"
+            ]
+        ]
+    },
+    {
+        "id": "f8fed9b0.a2c708",
+        "type": "comment",
+        "z": "19564b21.32eff5",
+        "name": "RS232-USB PL2303 or FTDI Conversor",
+        "info": "",
+        "x": 490,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "7545bcea.c00be4",
+        "type": "serial request",
+        "z": "19564b21.32eff5",
+        "name": "",
+        "serial": "88ec1814.a229c8",
+        "x": 490,
+        "y": 160,
+        "wires": [
+            [
+                "37e0fc60.268e84"
+            ]
+        ]
+    },
+    {
+        "id": "c0a608b6.e8fc3",
+        "type": "switch",
+        "z": "6f2753f9.f16924",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "GENERIC",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "QPIGS",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "QPIRI",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "QMOD",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 430,
+        "y": 120,
+        "wires": [
+            [
+                "2b2aefb4.19f5e"
+            ],
+            [
+                "1abaf4a2.772193"
+            ],
+            [
+                "42b9d43e.43c464"
+            ],
+            [
+                "c4424d2a.7791d8"
+            ]
+        ]
+    },
+    {
+        "id": "7ced7890.912c6",
+        "type": "switch",
+        "z": "d90bf75a.6a7e5",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "GENERIC",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "QPIGS",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "QPIRI",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "QMOD",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 450,
+        "y": 200,
+        "wires": [
+            [
+                "6e257f63.fad12"
+            ],
+            [
+                "39770a81.8633b6"
+            ],
+            [
+                "94d4516.a6ab9b"
+            ],
+            [
+                "30268415.fc26d4",
+                "4453f4f2.08eab4"
+            ]
+        ]
+    },
+    {
+        "id": "336bb1cc.25ea06",
+        "type": "join",
+        "z": "d90bf75a.6a7e5",
+        "name": "",
+        "mode": "custom",
+        "build": "merged",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "5",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 950,
+        "y": 220,
+        "wires": [
+            [
+                "9e6bf6e3.21c4d8"
+            ]
+        ]
+    },
+    {
+        "id": "1f33ea51.3cb146",
+        "type": "exec",
+        "z": "6f2753f9.f16924",
+        "command": "cat /sys/class/gpio/gpio27/direction",
+        "addpay": true,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "gpio27/direction",
+        "x": 320,
+        "y": 340,
+        "wires": [
+            [
+                "4826fdc1.d71b44"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "90944c96.af2bd",
+        "type": "inject",
+        "z": "6f2753f9.f16924",
+        "d": true,
+        "name": "Termo",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 100,
+        "y": 340,
+        "wires": [
+            [
+                "1f33ea51.3cb146"
+            ]
+        ]
+    },
+    {
+        "id": "8a84fbb1.370938",
+        "type": "debug",
+        "z": "6f2753f9.f16924",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "4826fdc1.d71b44",
+        "type": "function",
+        "z": "6f2753f9.f16924",
+        "name": "ResponseTermo",
+        "func": "\nvar data = msg.payload.trim();\n\ntermo=0;\nswitch(data){\n    case \"in\":\n        termo=0;\n        break;\n    case \"out\":\n        termo=1;\n        break;\n}\n\nvar playload = {\n        'termo':termo\n    };\n\nreturn [\n    {\n        payload:playload\n    }\n]",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 690,
+        "y": 340,
+        "wires": [
+            [
+                "8a84fbb1.370938",
+                "c5f52881.2e8498"
+            ]
+        ]
+    },
+    {
+        "id": "c5f52881.2e8498",
+        "type": "join",
+        "z": "6f2753f9.f16924",
+        "name": "",
+        "mode": "custom",
+        "build": "merged",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "5",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 950,
+        "y": 220,
+        "wires": [
+            [
+                "d532fb6d.816008",
+                "f0c18d81.4e3738"
+            ]
+        ]
+    },
+    {
+        "id": "79012bbd.4dce94",
+        "type": "link in",
+        "z": "6f2753f9.f16924",
+        "name": "SerialHibrido1",
+        "links": [
+            "6d6a9aeb.2d46a4",
+            "3c3761e1.8a4226",
+            "8bdd21a0.6a159",
+            "ad6e4cc7.61eb9",
+            "e2a844ca.ffc448"
+        ],
+        "x": 255,
+        "y": 40,
+        "wires": [
+            [
+                "1af1bfe.967f8c"
+            ]
+        ]
+    },
+    {
+        "id": "6d6a9aeb.2d46a4",
+        "type": "link out",
+        "z": "6f2753f9.f16924",
+        "name": "",
+        "links": [
+            "79012bbd.4dce94"
+        ],
+        "x": 295,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "3c3761e1.8a4226",
+        "type": "link out",
+        "z": "6f2753f9.f16924",
+        "name": "",
+        "links": [
+            "79012bbd.4dce94"
+        ],
+        "x": 255,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "8bdd21a0.6a159",
+        "type": "link out",
+        "z": "6f2753f9.f16924",
+        "name": "",
+        "links": [
+            "79012bbd.4dce94"
+        ],
+        "x": 575,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "ad6e4cc7.61eb9",
+        "type": "link out",
+        "z": "6f2753f9.f16924",
+        "name": "",
+        "links": [
+            "79012bbd.4dce94"
+        ],
+        "x": 455,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "f0c18d81.4e3738",
+        "type": "link out",
+        "z": "6f2753f9.f16924",
+        "name": "AxpertAllData",
+        "links": [
+            "da0c677.698e198",
+            "12a315aa.808b82",
+            "c87d3353.a0685"
+        ],
+        "x": 1055,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "4453f4f2.08eab4",
+        "type": "debug",
+        "z": "d90bf75a.6a7e5",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 670,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "af105e7e.79ce2",
+        "type": "inject",
+        "z": "d90bf75a.6a7e5",
+        "name": "QFLAG",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "GENERIC",
+        "payload": "QFLAG",
+        "payloadType": "str",
+        "x": 90,
+        "y": 360,
+        "wires": [
+            [
+                "cfdb8f33.4f2128"
+            ]
+        ]
+    },
+    {
+        "id": "cfdb8f33.4f2128",
+        "type": "function",
+        "z": "d90bf75a.6a7e5",
+        "name": "CRCTJ",
+        "func": "    //  Algoritmo para lanzar los comandos hacia Voltronics por puerto serie con CRC propietario\n    //  Algoritmo realizado por Tejota   solar@tejota.net\n    var topic = (msg.payload) + (\" \") + (msg.topic); // Topic con el comando string y posible descripcion\n    var comandobuffer = Buffer.from(msg.payload);   // pasando a buffer el string del comando          \n    var crc = 0x0000;                              //  inicio del crc\n    for (tj = 0; tj < comandobuffer.length; tj++)    // scaneo del buffer\n            {\n        const byte = comandobuffer[tj];          // analizando el byte para aplicarle el crc16xmodem\n        tejota = (crc >>> 8) & 0xff;\n        tejota ^= byte & 0xff;\n        tejota ^= tejota >>> 4;\n        crc = (crc << 8) & 0xffff;            //  Algoritmo\n        crc ^= tejota;                       //  crc16 xmodem \n        tejota = (tejota << 5) & 0xffff;    //   sin tabla estatica\n        crc ^= tejota;\n        tejota = (tejota << 7) & 0xffff;\n        crc ^= tejota;\n            }                            // resultante crc numerico \n    var crchexastring = crc.toString(16).padStart(4,'0');  // crc numerico a string hexa añadiendo ceros a izquierda si es preciso\n    var crchexabuffer = Buffer.from(crchexastring, \"hex\"); // buffer del crchexa\n    for (mdk=0; mdk < crchexabuffer.length; mdk++)  // scaneo del buffer\n            {\n            if (crchexabuffer[mdk]==10 || crchexabuffer[mdk]==13 || crchexabuffer[mdk]==40)   // Exceptuando estos bytes mdk \n                    {\n                        crchexabuffer[mdk]++;  // se pone el byte siguiente si es alguno de las excepciones mdk\n                    }\n            }        \n    const retornodecarro = Buffer.from(\"\\r\");\n    var crctotalbuffer = [comandobuffer, crchexabuffer, retornodecarro];  // construyendo el buffer final hacia el hibrido\n    msg.payload = Buffer.concat(crctotalbuffer);\n    //msg.topic = topic;\n    return msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 340,
+        "y": 440,
+        "wires": [
+            [
+                "2ef0fe1.7a5b582"
+            ]
+        ]
+    },
+    {
+        "id": "d6f057a1.359be8",
+        "type": "inject",
+        "z": "d90bf75a.6a7e5",
+        "name": "POPLG01",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "GENERIC",
+        "payload": "POPLG01",
+        "payloadType": "str",
+        "x": 100,
+        "y": 400,
+        "wires": [
+            [
+                "cfdb8f33.4f2128"
+            ]
+        ],
+        "info": "01: ON Line mode\n02: ECO Mode"
+    },
+    {
+        "id": "7101c8e2.4de208",
+        "type": "inject",
+        "z": "d90bf75a.6a7e5",
+        "name": "POPLG02",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "GENERIC",
+        "payload": "POPLG02",
+        "payloadType": "str",
+        "x": 100,
+        "y": 440,
+        "wires": [
+            [
+                "cfdb8f33.4f2128"
+            ]
+        ],
+        "info": "01: ON Line mode\n02: ECO Mode"
+    },
+    {
+        "id": "9d2664cd.1a35a8",
+        "type": "inject",
+        "z": "d90bf75a.6a7e5",
+        "name": "POP00",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "GENERIC",
+        "payload": "POP00",
+        "payloadType": "str",
+        "x": 90,
+        "y": 480,
+        "wires": [
+            [
+                "cfdb8f33.4f2128"
+            ]
+        ],
+        "info": "00: Utiliti first\n00: Solar first"
+    },
+    {
+        "id": "e36607a5.10926",
+        "type": "inject",
+        "z": "d90bf75a.6a7e5",
+        "name": "POP02",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "GENERIC",
+        "payload": "POP02",
+        "payloadType": "str",
+        "x": 90,
+        "y": 520,
+        "wires": [
+            [
+                "cfdb8f33.4f2128"
+            ]
+        ],
+        "info": "00: Utiliti first\n00: Solar first"
+    },
+    {
+        "id": "ff65b816.0fc948",
+        "type": "ui_gauge",
+        "z": "3f2aa594.49e742",
+        "name": "SOC Plomo",
+        "group": "f19b243a.6da148",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "SOC Plomo",
+        "label": "%",
+        "format": "{{value | number:2}}%",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 430,
+        "y": 587,
+        "wires": []
+    },
+    {
+        "id": "aaf0cb8e.f1961",
+        "type": "function",
+        "z": "3f2aa594.49e742",
+        "name": "to_gauge_SOC",
+        "func": "\nmsg_gauge={};\nmsg_gauge.payload = msg.payload.SOC/10;\n\nreturn msg_gauge;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 200,
+        "y": 587,
+        "wires": [
+            [
+                "ff65b816.0fc948"
+            ]
+        ]
+    },
+    {
+        "id": "dfdb975e.7ae8a8",
+        "type": "ui_gauge",
+        "z": "3f2aa594.49e742",
+        "name": "SOC Litio",
+        "group": "34811053.1a55d8",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "SOC Litio",
+        "label": "%",
+        "format": "{{value | number:2}}%",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 900,
+        "y": 587,
+        "wires": []
+    },
+    {
+        "id": "4e01e73c.a5c848",
+        "type": "function",
+        "z": "3f2aa594.49e742",
+        "name": "to_gauge_SOC",
+        "func": "\nmsg_gauge={};\nmsg_gauge.payload = msg.payload.SOC/10;\n\nreturn msg_gauge;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 680,
+        "y": 587,
+        "wires": [
+            [
+                "dfdb975e.7ae8a8"
+            ]
+        ]
+    },
+    {
+        "id": "3c77215b.f8d41e",
+        "type": "link in",
+        "z": "3f2aa594.49e742",
+        "name": "",
+        "links": [
+            "7c5ee92f.8c241"
+        ],
+        "x": 535,
+        "y": 467,
+        "wires": [
+            [
+                "4e01e73c.a5c848",
+                "3830a63f.0a6c9a"
+            ]
+        ]
+    },
+    {
+        "id": "7c5ee92f.8c241",
+        "type": "link out",
+        "z": "3f2aa594.49e742",
+        "name": "RawBMV2",
+        "links": [
+            "3c77215b.f8d41e"
+        ],
+        "x": 755,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "3830a63f.0a6c9a",
+        "type": "function",
+        "z": "3f2aa594.49e742",
+        "name": "to_gauge_V",
+        "func": "\nmsg_gauge={};\nmsg_gauge.payload = msg.payload.v_calc;\n\nreturn msg_gauge;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 670,
+        "y": 527,
+        "wires": [
+            [
+                "9693f3d2.468d9"
+            ]
+        ]
+    },
+    {
+        "id": "9693f3d2.468d9",
+        "type": "ui_gauge",
+        "z": "3f2aa594.49e742",
+        "name": "Volt Litio",
+        "group": "34811053.1a55d8",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Volt Litio",
+        "label": "V",
+        "format": "{{value | number:3}}",
+        "min": "45",
+        "max": "64",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 900,
+        "y": 527,
+        "wires": []
+    },
+    {
+        "id": "add06f33.f639c",
+        "type": "link out",
+        "z": "3f2aa594.49e742",
+        "name": "RawBMV1",
+        "links": [
+            "f923774e.4ece"
+        ],
+        "x": 755,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "f923774e.4ece",
+        "type": "link in",
+        "z": "3f2aa594.49e742",
+        "name": "",
+        "links": [
+            "add06f33.f639c"
+        ],
+        "x": 75,
+        "y": 467,
+        "wires": [
+            [
+                "aaf0cb8e.f1961",
+                "179c65c5.c2aea2"
+            ]
+        ]
+    },
+    {
+        "id": "179c65c5.c2aea2",
+        "type": "function",
+        "z": "3f2aa594.49e742",
+        "name": "to_gauge_V",
+        "func": "\nmsg_gauge={};\n//msg_gauge.payload={};\n//msg_gauge.topic=\"{{value | number:1}}V\";\n\nmsg_gauge.payload = msg.payload.v_calc;\n\nreturn msg_gauge;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 190,
+        "y": 527,
+        "wires": [
+            [
+                "312bcacc.0eab0e"
+            ]
+        ]
+    },
+    {
+        "id": "312bcacc.0eab0e",
+        "type": "ui_gauge",
+        "z": "3f2aa594.49e742",
+        "name": "Volt Plomo",
+        "group": "f19b243a.6da148",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Volt Plomo",
+        "label": "V",
+        "format": "{{value | number:3}}",
+        "min": "11",
+        "max": "15",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 430,
+        "y": 527,
+        "wires": []
+    },
+    {
+        "id": "f7bea082.06f8d",
+        "type": "comment",
+        "z": "d0b82b2e.e10cc",
+        "name": "Uso de la batería del Hibrido2 Litio",
+        "info": "",
+        "x": 580,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "dc13444a.fd8f2",
+        "type": "link in",
+        "z": "d0b82b2e.e10cc",
+        "name": "",
+        "links": [
+            "3799cee5.9de032"
+        ],
+        "x": 149,
+        "y": 100,
+        "wires": [
+            [
+                "5253ad1b.b5deb4"
+            ]
+        ]
+    },
+    {
+        "id": "5253ad1b.b5deb4",
+        "type": "switch",
+        "z": "d0b82b2e.e10cc",
+        "name": "SOC",
+        "property": "payload.SOC",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lt",
+                "v": "300",
+                "vt": "num"
+            },
+            {
+                "t": "gte",
+                "v": "400",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 104,
+        "y": 220,
+        "wires": [
+            [
+                "5f69d5fc.4acba4"
+            ],
+            [
+                "1ce05244.45c4d6"
+            ]
+        ]
+    },
+    {
+        "id": "5f69d5fc.4acba4",
+        "type": "switch",
+        "z": "d0b82b2e.e10cc",
+        "name": "No estamos en ECO?",
+        "property": "hibrido2_mode",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "E",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 314,
+        "y": 180,
+        "wires": [
+            [
+                "e7f73961.cc546"
+            ]
+        ]
+    },
+    {
+        "id": "1ce05244.45c4d6",
+        "type": "switch",
+        "z": "d0b82b2e.e10cc",
+        "name": "No estamos en batería?",
+        "property": "hibrido2_mode",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "B",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 324,
+        "y": 260,
+        "wires": [
+            [
+                "80ddbbaf.03e4b8"
+            ]
+        ]
+    },
+    {
+        "id": "4a6a1a4a.053224",
+        "type": "debug",
+        "z": "d0b82b2e.e10cc",
+        "name": "action hibrido",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1080,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "e7f73961.cc546",
+        "type": "change",
+        "z": "d0b82b2e.e10cc",
+        "name": "Cambio a ECO (bypass)",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "POPLG02",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "GENERIC",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 810,
+        "y": 180,
+        "wires": [
+            [
+                "2dfc259d.40a3e2",
+                "4a6a1a4a.053224"
+            ]
+        ]
+    },
+    {
+        "id": "51dee103.f377e8",
+        "type": "change",
+        "z": "d0b82b2e.e10cc",
+        "name": "Cambio a InLine (battery)",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "POPLG01",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "GENERIC",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 810,
+        "y": 260,
+        "wires": [
+            [
+                "2dfc259d.40a3e2",
+                "4a6a1a4a.053224"
+            ]
+        ]
+    },
+    {
+        "id": "e0a97e4c.d6e368",
+        "type": "link out",
+        "z": "d90bf75a.6a7e5",
+        "name": "",
+        "links": [
+            "6a17550d.307914"
+        ],
+        "x": 295,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "6a17550d.307914",
+        "type": "link in",
+        "z": "d90bf75a.6a7e5",
+        "name": "SerialHibrido2",
+        "links": [
+            "e0a97e4c.d6e368",
+            "2ef0fe1.7a5b582"
+        ],
+        "x": 255,
+        "y": 40,
+        "wires": [
+            [
+                "501c87c9.ef19f"
+            ]
+        ]
+    },
+    {
+        "id": "2ef0fe1.7a5b582",
+        "type": "link out",
+        "z": "d90bf75a.6a7e5",
+        "name": "",
+        "links": [
+            "6a17550d.307914"
+        ],
+        "x": 455,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "2dfc259d.40a3e2",
+        "type": "link out",
+        "z": "d0b82b2e.e10cc",
+        "name": "",
+        "links": [
+            "475064af.7c8a14"
+        ],
+        "x": 1015,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "e2a844ca.ffc448",
+        "type": "link out",
+        "z": "6f2753f9.f16924",
+        "name": "",
+        "links": [
+            "79012bbd.4dce94"
+        ],
+        "x": 1135,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "d4fa4e9.91fc2b",
+        "type": "link in",
+        "z": "6f2753f9.f16924",
+        "name": "SerialHibrido1Text",
+        "links": [
+            "40373040.fe32d8",
+            "93829ad0.d1f45",
+            "b83fb0a9.2831a8",
+            "91d2ab87.39d908",
+            "250e5b35.161fbc"
+        ],
+        "x": 915,
+        "y": 40,
+        "wires": [
+            [
+                "33a3e1d4.48aa7e"
+            ]
+        ]
+    },
+    {
+        "id": "40373040.fe32d8",
+        "type": "link out",
+        "z": "6f2753f9.f16924",
+        "name": "",
+        "links": [
+            "d4fa4e9.91fc2b"
+        ],
+        "x": 455,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "3a5074e1.c9425c",
+        "type": "ui_button",
+        "z": "d0b82b2e.e10cc",
+        "name": "",
+        "group": "3073317c.70a93e",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Cambio a ECO (bypass)",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 330,
+        "y": 120,
+        "wires": [
+            [
+                "e7f73961.cc546"
+            ]
+        ]
+    },
+    {
+        "id": "86f74b9c.a697d8",
+        "type": "ui_button",
+        "z": "d0b82b2e.e10cc",
+        "name": "",
+        "group": "3073317c.70a93e",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Cambio a in-line (battery)",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 324,
+        "y": 320,
+        "wires": [
+            [
+                "80ddbbaf.03e4b8"
+            ]
+        ]
+    },
+    {
+        "id": "c9bc2d1e.635b9",
+        "type": "inject",
+        "z": "d90bf75a.6a7e5",
+        "name": "Termo",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 100,
+        "y": 580,
+        "wires": [
+            [
+                "ddbf54ab.18ba68"
+            ]
+        ]
+    },
+    {
+        "id": "ddbf54ab.18ba68",
+        "type": "exec",
+        "z": "d90bf75a.6a7e5",
+        "command": "cat /sys/class/gpio/gpio27/direction",
+        "addpay": true,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "gpio27/direction",
+        "x": 320,
+        "y": 580,
+        "wires": [
+            [
+                "c411d271.359ca"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "c411d271.359ca",
+        "type": "function",
+        "z": "d90bf75a.6a7e5",
+        "name": "ResponseTermo",
+        "func": "\nvar data = msg.payload.trim();\n\ntermo=0;\nswitch(data){\n    case \"in\":\n        termo=0;\n        break;\n    case \"out\":\n        termo=1;\n        break;\n}\n\nvar playload = {\n        'termo':termo\n    };\n\nreturn [\n    {\n        payload:playload\n    }\n]",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 690,
+        "y": 580,
+        "wires": [
+            [
+                "336bb1cc.25ea06"
+            ]
+        ]
+    },
+    {
+        "id": "5f345179.a73cd",
+        "type": "switch",
+        "z": "6f2753f9.f16924",
+        "name": "SOC",
+        "property": "payload.SOC",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lt",
+                "v": "750",
+                "vt": "num"
+            },
+            {
+                "t": "gte",
+                "v": "900",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 130,
+        "y": 1040,
+        "wires": [
+            [
+                "cc309d2f.4e11"
+            ],
+            [
+                "f5c3f657.c1b47"
+            ]
+        ]
+    },
+    {
+        "id": "ef6e8deb.a731c",
+        "type": "change",
+        "z": "6f2753f9.f16924",
+        "name": "Cambio a Utility",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "POP00",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "GENERIC",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 840,
+        "y": 1000,
+        "wires": [
+            [
+                "91d2ab87.39d908",
+                "4e09fe.306a6604"
+            ]
+        ]
+    },
+    {
+        "id": "cde22673.99f56",
+        "type": "change",
+        "z": "6f2753f9.f16924",
+        "name": "Cambio a Batería",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "POP02",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "GENERIC",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 830,
+        "y": 1080,
+        "wires": [
+            [
+                "91d2ab87.39d908",
+                "4e09fe.306a6604"
+            ]
+        ]
+    },
+    {
+        "id": "e811e0a1.7f8d08",
+        "type": "link in",
+        "z": "6f2753f9.f16924",
+        "d": true,
+        "name": "",
+        "links": [
+            "bcce0e41.09a8d"
+        ],
+        "x": 195,
+        "y": 920,
+        "wires": [
+            [
+                "5f345179.a73cd"
+            ]
+        ]
+    },
+    {
+        "id": "cc309d2f.4e11",
+        "type": "switch",
+        "z": "6f2753f9.f16924",
+        "name": "No estamos en Utility?",
+        "property": "hibrido1.OutputSource",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 340,
+        "y": 1000,
+        "wires": [
+            [
+                "ef6e8deb.a731c"
+            ]
+        ]
+    },
+    {
+        "id": "f5c3f657.c1b47",
+        "type": "switch",
+        "z": "6f2753f9.f16924",
+        "name": "No estamos en batería?",
+        "property": "hibrido1.OutputSource",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 350,
+        "y": 1080,
+        "wires": [
+            [
+                "a18ddf66.6b61a"
+            ]
+        ]
+    },
+    {
+        "id": "a18ddf66.6b61a",
+        "type": "switch",
+        "z": "6f2753f9.f16924",
+        "name": "No estamos cargando?",
+        "property": "hibrido1.ChargerSource",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 610,
+        "y": 1080,
+        "wires": [
+            [
+                "cde22673.99f56"
+            ]
+        ]
+    },
+    {
+        "id": "f7c614f8.3fa9c8",
+        "type": "comment",
+        "z": "6f2753f9.f16924",
+        "name": "Uso de batería del Hibrido1 Plomo",
+        "info": "",
+        "x": 580,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "91d2ab87.39d908",
+        "type": "link out",
+        "z": "6f2753f9.f16924",
+        "d": true,
+        "name": "",
+        "links": [
+            "d4fa4e9.91fc2b"
+        ],
+        "x": 1015,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "1bf56c17.dd811c",
+        "type": "comment",
+        "z": "6f2753f9.f16924",
+        "name": "Carga de batería Hibrido1",
+        "info": "",
+        "x": 550,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "cf754a3d.5e29",
+        "type": "link in",
+        "z": "6f2753f9.f16924",
+        "name": "",
+        "links": [
+            "3799cee5.9de032"
+        ],
+        "x": 235,
+        "y": 1260,
+        "wires": [
+            [
+                "591990f2.e6174"
+            ]
+        ]
+    },
+    {
+        "id": "c87d3353.a0685",
+        "type": "link in",
+        "z": "6f2753f9.f16924",
+        "name": "",
+        "links": [
+            "f0c18d81.4e3738"
+        ],
+        "x": 235,
+        "y": 1220,
+        "wires": [
+            [
+                "591990f2.e6174"
+            ]
+        ]
+    },
+    {
+        "id": "591990f2.e6174",
+        "type": "join",
+        "z": "6f2753f9.f16924",
+        "d": true,
+        "name": "",
+        "mode": "custom",
+        "build": "merged",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "8",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 370,
+        "y": 1240,
+        "wires": [
+            [
+                "74fc1a68.39aed4",
+                "955fa239.40d3d"
+            ]
+        ]
+    },
+    {
+        "id": "74fc1a68.39aed4",
+        "type": "function",
+        "z": "6f2753f9.f16924",
+        "name": "Algoritmo",
+        "func": "\nmsg_new={};\nmsg_new.payload={};\nmsg_new.payload.ChargerSource=msg.payload.ChargerSource;\nmsg_new.payload.I=msg.payload.I/1000\nmsg_new.payload.V=msg.payload.v_calc;\n\n\n//Cargando?\nif (msg_new.payload.ChargerSource==0){//Sí\n    \n    //Excesos?\n    if (msg_new.payload.I>1 && msg_new.payload.V > 59.8){\n        //Subo\n        msg_new.topic=\"up\";\n        node.log('Subo potencia carga');\n    }else{\n        if (msg_new.payload.I<-25){\n            //pico de carga, apago:\n            msg_new.topic=\"off_now\"\n            node.warn('Apago carga por pico');\n        }else{\n            //Bajo o apago\n            icarga=global.get('hibrido01_icarga');\n            if (icarga > 0){\n                msg_new.topic=\"down\"\n                node.log('Bajo potencia carga');\n            }else{\n                msg_new.topic=\"off\"\n                node.warn('Apago carga');\n            }\n        }\n    }\n    \n}else{//No\n    \n    //Excesos?\n    if (msg_new.payload.I>1 && msg_new.payload.V > 59.8){\n        //Cargo\n        msg_new.topic=\"on\"\n        node.warn('Inicio carga')\n    }else{\n        msg_new=null;\n        node.log('Esperando');\n    }\n    \n}\n\nreturn msg_new;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 520,
+        "y": 1240,
+        "wires": [
+            [
+                "118ba2fb.b44edd",
+                "933e2cf9.f1b788"
+            ]
+        ]
+    },
+    {
+        "id": "933e2cf9.f1b788",
+        "type": "debug",
+        "z": "6f2753f9.f16924",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "topic",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "118ba2fb.b44edd",
+        "type": "switch",
+        "z": "6f2753f9.f16924",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "up",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "down",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "off_now",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 5,
+        "x": 690,
+        "y": 1240,
+        "wires": [
+            [
+                "6f8aaaa8.69e46c"
+            ],
+            [
+                "70028033.8a8d28"
+            ],
+            [
+                "8c6888a2.a66338"
+            ],
+            [
+                "265ec1bc.1b9326"
+            ],
+            [
+                "b9419cb7.b1b778"
+            ]
+        ]
+    },
+    {
+        "id": "4e09fe.306a6604",
+        "type": "debug",
+        "z": "6f2753f9.f16924",
+        "name": "Operacion Bypass Hibrido1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1120,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "6f8aaaa8.69e46c",
+        "type": "function",
+        "z": "6f2753f9.f16924",
+        "name": "Carga On",
+        "func": "\nmsg={};\nmsg.payload='';\nmsg.topic='';\n\ncount=context.get('count');\n\nif (count > 5){\n    msg.payload = 'PCP00';\n    msg.topic = 'GENERIC';\n    context.set('count',0);\n}else{\n    context.set('count',count +1);\n    msg=null;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is deployed.\ncontext.set('count',0);",
+        "finalize": "",
+        "x": 860,
+        "y": 1180,
+        "wires": [
+            [
+                "a918664f.fc2c68",
+                "250e5b35.161fbc"
+            ]
+        ],
+        "icon": "font-awesome/fa-power-off"
+    },
+    {
+        "id": "70028033.8a8d28",
+        "type": "function",
+        "z": "6f2753f9.f16924",
+        "name": "Carga Up",
+        "func": "\nmsg={};\nmsg.payload='';\nmsg.topic='';\n\ncargas=['02','10','20','30','40','50'];\n\ncount=context.get('count');\n\nif (count > 5){\n    posicarga=global.get('hibrido01_icarga');\n    if (posicarga<5){\n        posicarga++;\n        msg.payload = 'MUCHGC0'+cargas[posicarga];\n        msg.topic = 'GENERIC';\n        context.set('count',0);\n        global.set('hibrido01_icarga',posicarga);\n    }else{\n        msg=null;\n    }\n}else{\n    context.set('count',count +1);\n    msg=null;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is deployed.\nglobal.set('hibrido01_icarga',0);\ncontext.set('count',0);",
+        "finalize": "",
+        "x": 860,
+        "y": 1220,
+        "wires": [
+            [
+                "a918664f.fc2c68",
+                "250e5b35.161fbc"
+            ]
+        ],
+        "icon": "font-awesome/fa-chevron-up"
+    },
+    {
+        "id": "8c6888a2.a66338",
+        "type": "function",
+        "z": "6f2753f9.f16924",
+        "name": "Carga Down",
+        "func": "\nmsg={};\nmsg.payload='';\nmsg.topic='';\n\ncargas=['02','10','20','30','40','50'];\n\ncount=context.get('count');\n\nif (count > 5){\n    posicarga=global.get('hibrido01_icarga');\n    if (posicarga>0){\n        posicarga--;\n        msg.payload = 'MUCHGC0'+cargas[posicarga];\n        msg.topic = 'GENERIC';\n        context.set('count',0);\n        global.set('hibrido01_icarga',posicarga);\n    }else{\n        msg=null;\n    }\n\n    \n}else{\n    context.set('count',count +1);\n    msg=null;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is deployed.\nglobal.set('hibrido01_icarga',0);\ncontext.set('count',0);",
+        "finalize": "",
+        "x": 870,
+        "y": 1260,
+        "wires": [
+            [
+                "a918664f.fc2c68",
+                "250e5b35.161fbc"
+            ]
+        ],
+        "icon": "font-awesome/fa-chevron-down"
+    },
+    {
+        "id": "265ec1bc.1b9326",
+        "type": "function",
+        "z": "6f2753f9.f16924",
+        "name": "Carga Off",
+        "func": "\nmsg={};\nmsg.payload='';\nmsg.topic='';\n\nmsg2=null;\n\ncount=context.get('count');\n\nif (count > 5){\n    //Solo carga solar\n    msg.payload = 'PCP03';\n    msg.topic = 'GENERIC';\n    \n    //Carga al mínimo: 02 amperios\n    msg2={};\n    msg2.payload = 'MUCHGC002';\n    msg2.topic = 'GENERIC'\n    global.set('hibrido01_icarga',0);\n    \n    context.set('count',0);\n    \n}else{\n    context.set('count',count +1);\n    msg=null;\n}\n\nreturn [msg,msg2];",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is deployed.\ncontext.set('count',0);",
+        "finalize": "",
+        "x": 860,
+        "y": 1300,
+        "wires": [
+            [
+                "a918664f.fc2c68",
+                "250e5b35.161fbc"
+            ],
+            [
+                "a918664f.fc2c68",
+                "250e5b35.161fbc"
+            ]
+        ],
+        "icon": "font-awesome/fa-power-off"
+    },
+    {
+        "id": "a918664f.fc2c68",
+        "type": "debug",
+        "z": "6f2753f9.f16924",
+        "name": "Operacion Bypass Hibrido1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1220,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "250e5b35.161fbc",
+        "type": "link out",
+        "z": "6f2753f9.f16924",
+        "name": "",
+        "links": [
+            "d4fa4e9.91fc2b"
+        ],
+        "x": 1135,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "955fa239.40d3d",
+        "type": "debug",
+        "z": "6f2753f9.f16924",
+        "name": "ChargerSource",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload.ChargerSource",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 460,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "b9419cb7.b1b778",
+        "type": "function",
+        "z": "6f2753f9.f16924",
+        "name": "Carga Off Now",
+        "func": "\nmsg={};\n\n//Solo carga solar\nmsg.payload = 'PCP03';\nmsg.topic = 'GENERIC';\n\n//Carga al mínimo: 02 amperios\nmsg2={};\nmsg2.payload = 'MUCHGC002';\nmsg2.topic = 'GENERIC'\nglobal.set('hibrido01_icarga',0);\n\ncontext.set('count',0);\n    \n\nreturn [msg,msg2];",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is deployed.\ncontext.set('count',0);",
+        "finalize": "",
+        "x": 880,
+        "y": 1340,
+        "wires": [
+            [
+                "250e5b35.161fbc",
+                "a918664f.fc2c68"
+            ],
+            [
+                "250e5b35.161fbc",
+                "a918664f.fc2c68"
+            ]
+        ],
+        "icon": "font-awesome/fa-power-off"
+    },
+    {
+        "id": "475064af.7c8a14",
+        "type": "link in",
+        "z": "d90bf75a.6a7e5",
+        "name": "InCRCTJ",
+        "links": [
+            "2dfc259d.40a3e2"
+        ],
+        "x": 295,
+        "y": 340,
+        "wires": [
+            [
+                "cfdb8f33.4f2128"
+            ]
+        ]
+    },
+    {
+        "id": "355f449.f66cfbc",
+        "type": "modbus-read",
+        "z": "567ccd8c.354c84",
+        "d": true,
+        "name": "modbus",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "unitid": "1",
+        "dataType": "InputRegister",
+        "adr": "0",
+        "quantity": "10",
+        "rate": "10",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "230b3b3d.269dfc",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": true,
+        "x": 170,
+        "y": 140,
+        "wires": [
+            [
+                "e5caaa0c.b5554",
+                "7b47445e.27b0fc"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "e5caaa0c.b5554",
+        "type": "function",
+        "z": "567ccd8c.354c84",
+        "name": "",
+        "func": "\nobj = {}\nobj.payload = {};\nobj.payload.V=msg.payload[0]/10;\nobj.payload.A=msg.payload[1]/1000;\nobj.payload.W=msg.payload[3]/10;\nobj.payload.Hz=msg.payload[7]/10;\nobj.payload.pf=msg.payload[8]/100;\n\nreturn obj;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 370,
+        "y": 140,
+        "wires": [
+            [
+                "6f2c43f5.f35d3c",
+                "c28281f6.cfd838"
+            ]
+        ]
+    },
+    {
+        "id": "6f2c43f5.f35d3c",
+        "type": "debug",
+        "z": "567ccd8c.354c84",
+        "name": "Uno",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "dbc66846.bacd4",
+        "type": "modbus-read",
+        "z": "567ccd8c.354c84",
+        "d": true,
+        "name": "modbus",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "unitid": "2",
+        "dataType": "InputRegister",
+        "adr": "0",
+        "quantity": "10",
+        "rate": "10",
+        "rateUnit": "s",
+        "delayOnStart": true,
+        "startDelayTime": "5",
+        "server": "230b3b3d.269dfc",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": true,
+        "x": 170,
+        "y": 220,
+        "wires": [
+            [
+                "5e8c7b84.538d04"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "5e8c7b84.538d04",
+        "type": "function",
+        "z": "567ccd8c.354c84",
+        "name": "",
+        "func": "\nobj = {}\nobj.payload = {};\nobj.payload.V=msg.payload[0]/10;\nobj.payload.A=msg.payload[1]/1000;\nobj.payload.W=msg.payload[3]/10;\nobj.payload.Hz=msg.payload[7]/10;\nobj.payload.pf=msg.payload[8]/100;\n\nreturn obj;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 370,
+        "y": 220,
+        "wires": [
+            [
+                "669c4383.289a14"
+            ]
+        ]
+    },
+    {
+        "id": "669c4383.289a14",
+        "type": "debug",
+        "z": "567ccd8c.354c84",
+        "name": "Dos",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "c28281f6.cfd838",
+        "type": "emoncms",
+        "z": "567ccd8c.354c84",
+        "name": "Emoncms Push",
+        "emonServer": "c13dee13.c1dce8",
+        "nodegroup": "medidor1",
+        "datatype": "legacy",
+        "x": 600,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "7b47445e.27b0fc",
+        "type": "debug",
+        "z": "567ccd8c.354c84",
+        "name": "modbus_bruto",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 390,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "550239fd.e22948",
+        "type": "modbus-flex-getter",
+        "z": "567ccd8c.354c84",
+        "name": "modbus",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "logIOActivities": false,
+        "server": "230b3b3d.269dfc",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "x": 380,
+        "y": 320,
+        "wires": [
+            [
+                "5a510527.a62bac"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "de2345dd.a8b53",
+        "type": "inject",
+        "z": "567ccd8c.354c84",
+        "name": "meter1",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "meter1",
+        "payload": "{\"value\":\"meter1\",\"fc\":4,\"unitid\":1,\"address\":0,\"quantity\":10}",
+        "payloadType": "json",
+        "x": 180,
+        "y": 300,
+        "wires": [
+            [
+                "550239fd.e22948"
+            ]
+        ]
+    },
+    {
+        "id": "16e6cbcc.7c908c",
+        "type": "inject",
+        "z": "567ccd8c.354c84",
+        "name": "meter2",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "5",
+        "topic": "meter2",
+        "payload": "{\"value\":\"meter1\",\"fc\":4,\"unitid\":2,\"address\":0,\"quantity\":10}",
+        "payloadType": "json",
+        "x": 180,
+        "y": 340,
+        "wires": [
+            [
+                "550239fd.e22948"
+            ]
+        ]
+    },
+    {
+        "id": "5a510527.a62bac",
+        "type": "function",
+        "z": "567ccd8c.354c84",
+        "name": "",
+        "func": "\nif (msg.topic=='meter1'){\n    obj.payload.V1=msg.payload[0]/10;\n    obj.payload.A1=msg.payload[1]/1000;\n    obj.payload.W1=msg.payload[3]/10;\n    obj.payload.H1=msg.payload[7]/10;\n    obj.payload.pf1=msg.payload[8]/100;\n}\nif (msg.topic=='meter2'){\n    obj.payload.V2=msg.payload[0]/10;\n    obj.payload.A2=msg.payload[1]/1000;\n    obj.payload.W2=msg.payload[3]/10;\n    obj.payload.H2=msg.payload[7]/10;\n    obj.payload.pf2=msg.payload[8]/100;\n}\nreturn obj;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is deployed.\nobj = {}\nobj.payload = {};\n\n    obj.payload.A1=0;\n    obj.payload.W1=0;\n    obj.payload.H1=0;\n    obj.payload.pf1=0;\n\n    obj.payload.V2=0;\n    obj.payload.A2=0;\n    obj.payload.W2=0;\n    obj.payload.H2=0;\n    obj.payload.pf2=0;",
+        "finalize": "",
+        "x": 600,
+        "y": 320,
+        "wires": [
+            [
+                "d55c3008.118a18",
+                "775580ca.c6afb8"
+            ]
+        ]
+    },
+    {
+        "id": "d55c3008.118a18",
+        "type": "debug",
+        "z": "567ccd8c.354c84",
+        "name": "Uno",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "775580ca.c6afb8",
+        "type": "emoncms",
+        "z": "567ccd8c.354c84",
+        "name": "Emoncms Push",
+        "emonServer": "c13dee13.c1dce8",
+        "nodegroup": "meters",
+        "datatype": "legacy",
+        "x": 820,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "f05c2f1e.e9446",
+        "type": "exec",
+        "z": "2907f506.466f2a",
+        "command": "/home/pi/bms/bms_nodered.sh",
+        "addpay": true,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "5",
+        "oldrc": false,
+        "name": "bms_read",
+        "x": 112,
+        "y": 100,
+        "wires": [
+            [
+                "1db9d597.c4ec3a"
+            ],
+            [
+                "7206feae.f565c8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "66458373.fe58a4",
+        "type": "inject",
+        "z": "2907f506.466f2a",
+        "name": "BMS",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 90,
+        "y": 40,
+        "wires": [
+            [
+                "f05c2f1e.e9446"
+            ]
+        ]
+    },
+    {
+        "id": "7206feae.f565c8",
+        "type": "debug",
+        "z": "2907f506.466f2a",
+        "name": "bms_error",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 310,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "8e39d289.0acf58",
+        "type": "function",
+        "z": "2907f506.466f2a",
+        "d": true,
+        "name": "parse_bms",
+        "func": "msg2=null;\nmsg3=null;\n\nif (msg.payload!='empty\\n'){\n    msg.payload=JSON.parse(msg.payload)\n}\n\nif (msg.payload.min<3100){\n    msg2={};\n    msg2.payload={};\n    msg2.payload.event='alertminvolt';\n}\n\nif (msg.payload.max>4200){\n    msg3={};\n    msg3.payload={};\n    msg3.payload.event='alertmaxvolt';\n}\n\nreturn [msg,msg2,msg3];",
+        "outputs": 3,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1370,
+        "y": 420,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "da25adfe.d48f4",
+        "type": "debug",
+        "z": "2907f506.466f2a",
+        "name": "bms_json_raw",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 802,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "a28da26.4e499e",
+        "type": "emoncms",
+        "z": "2907f506.466f2a",
+        "name": "Emoncms Push",
+        "emonServer": "c13dee13.c1dce8",
+        "nodegroup": "bms",
+        "datatype": "legacy",
+        "x": 802,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "ace9d848.e85f7",
+        "type": "debug",
+        "z": "2907f506.466f2a",
+        "d": true,
+        "name": "bms_event_error",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1390,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "79649ab0.a8c6ac",
+        "type": "change",
+        "z": "2907f506.466f2a",
+        "name": "set_error_mode_low_battery",
+        "rules": [
+            {
+                "t": "set",
+                "p": "battery_error",
+                "pt": "global",
+                "to": "1",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 840,
+        "y": 220,
+        "wires": [
+            [
+                "46e9aded.842164"
+            ]
+        ]
+    },
+    {
+        "id": "eb01005.a9183",
+        "type": "change",
+        "z": "2907f506.466f2a",
+        "name": "set_error_mode_high_battery",
+        "rules": [
+            {
+                "t": "set",
+                "p": "battery_error",
+                "pt": "global",
+                "to": "2",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 850,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "80ddbbaf.03e4b8",
+        "type": "switch",
+        "z": "d0b82b2e.e10cc",
+        "name": "no hay battery_error?",
+        "property": "battery_error",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 574,
+        "y": 260,
+        "wires": [
+            [
+                "51dee103.f377e8"
+            ]
+        ]
+    },
+    {
+        "id": "a900b1cd.c310c",
+        "type": "link in",
+        "z": "d0b82b2e.e10cc",
+        "name": "InChangeToECO_bypass_",
+        "links": [
+            "46e9aded.842164"
+        ],
+        "x": 649,
+        "y": 100,
+        "wires": [
+            [
+                "e7f73961.cc546"
+            ]
+        ]
+    },
+    {
+        "id": "46e9aded.842164",
+        "type": "link out",
+        "z": "2907f506.466f2a",
+        "name": "",
+        "links": [
+            "a900b1cd.c310c"
+        ],
+        "x": 1035,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "b1937f34.eb109",
+        "type": "inject",
+        "z": "2907f506.466f2a",
+        "name": "Set_Battery_Error",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 570,
+        "y": 220,
+        "wires": [
+            [
+                "79649ab0.a8c6ac"
+            ]
+        ],
+        "icon": "font-awesome/fa-warning"
+    },
+    {
+        "id": "ff34c942.36e5a",
+        "type": "switch",
+        "z": "2907f506.466f2a",
+        "name": "check_min",
+        "property": "payload.min",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lt",
+                "v": "3100",
+                "vt": "str"
+            },
+            {
+                "t": "gt",
+                "v": "3300",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 530,
+        "y": 280,
+        "wires": [
+            [
+                "79649ab0.a8c6ac",
+                "b5a88925.37ba28"
+            ],
+            [
+                "ec107bb8.5f1018"
+            ]
+        ]
+    },
+    {
+        "id": "1db9d597.c4ec3a",
+        "type": "function",
+        "z": "2907f506.466f2a",
+        "name": "bms_parse",
+        "func": "if (msg.payload!='empty\\n'){\n    msg.payload=JSON.parse(msg.payload)\n}\n\nmsg.payload.batter_low_error=global.get('battery_error');\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 312,
+        "y": 80,
+        "wires": [
+            [
+                "ff34c942.36e5a",
+                "d6466e19.dd0f5",
+                "da25adfe.d48f4",
+                "a28da26.4e499e"
+            ]
+        ]
+    },
+    {
+        "id": "d6466e19.dd0f5",
+        "type": "switch",
+        "z": "2907f506.466f2a",
+        "name": "check_max",
+        "property": "payload.max",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "4200",
+                "vt": "str"
+            },
+            {
+                "t": "lt",
+                "v": "4200",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 530,
+        "y": 340,
+        "wires": [
+            [
+                "eb01005.a9183"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "ec107bb8.5f1018",
+        "type": "change",
+        "z": "2907f506.466f2a",
+        "name": "reset_error_low",
+        "rules": [
+            {
+                "t": "set",
+                "p": "battery_error",
+                "pt": "global",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 800,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b5a88925.37ba28",
+        "type": "debug",
+        "z": "2907f506.466f2a",
+        "name": "bms_error_low",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 810,
+        "y": 160,
+        "wires": []
+    }
+]
